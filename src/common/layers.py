@@ -1,4 +1,8 @@
+import sys,os
 import numpy as np
+
+sys.path.append(os.path.join(os.path.dirname(__file__), './'))
+
 from functions import softmax, cross_entropy_error
 
 class MulLayer:
