@@ -32,3 +32,5 @@ def cross_entropy_error(y, t):
     batch_size = y.shape[0]
     return -np.sum(np.log(y[np.arange(batch_size), t] + 1e-7)) / batch_size
 
+def to_one_hot(t, num_classes=10):
+    return np.eye(num_classes)[t]
