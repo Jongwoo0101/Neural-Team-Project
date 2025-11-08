@@ -97,12 +97,13 @@
 ---
 
 ## 📈 데이터 로드
+(models 폴더에서 작업 할 경우)
 ```py
 # 학습(train) 데이터 불러오기
-x_train, t_train = load_mnist('./data', kind='train')
+x_train, t_train = load_mnist('../data', kind='train')
 
 # 테스트(test) 데이터 불러오기
-x_test, t_test = load_mnist('./data', kind='t10k')
+x_test, t_test = load_mnist('../data', kind='t10k')
 ```
 
 ---
