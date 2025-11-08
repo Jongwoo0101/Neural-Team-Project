@@ -96,6 +96,17 @@
 
 ---
 
+## 📈 데이터 로드
+```py
+# 학습(train) 데이터 불러오기
+x_train, t_train = load_mnist('./data', kind='train')
+
+# 테스트(test) 데이터 불러오기
+x_test, t_test = load_mnist('./data', kind='t10k')
+```
+
+---
+
 ## ⬆️ Git 커밋규칙 (최종 모델 선정 이후부터 적용)
 한 커밋당 변경사항은 무조건 한가지만!
 | 타입 | 이름 | 내용 |
