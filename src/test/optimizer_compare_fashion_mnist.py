@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from common.util import smooth_curve
-from common.multi_layer_net import MultiLayerNet
+from models.multi_layer_net import MultiLayerNet
 from common.optimizer import *
 from data.mnist_reader import load_mnist
 
