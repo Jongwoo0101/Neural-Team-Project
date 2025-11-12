@@ -1,5 +1,6 @@
 import sys,os
 import numpy as np
+import matplotlib.pyplot as plt
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
@@ -51,3 +52,25 @@ for i in range(iters_num):
         test_acc_list.append(test_acc)
         
         print(f"train acc: {train_acc}\ntest acc: {test_acc}")
+        
+# 손실 그래프
+plt.figure(figsize=(10, 4))
+plt.plot(np.arange(len(train_loss_list)), train_loss_list, label='Training Loss')
+plt.title('Training Loss Curve')
+plt.xlabel('Iterations')
+plt.ylabel('Loss')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+# 정확도 그래프
+epochs = np.arange(len(train_acc_list))
+plt.figure(figsize=(10, 4))
+plt.plot(epochs, train_acc_list, label='Train Accuracy')
+plt.plot(epochs, test_acc_list, label='Test Accuracy')
+plt.title('Accuracy Curve')
+plt.xlabel('Epochs')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.grid(True)
+plt.show()
