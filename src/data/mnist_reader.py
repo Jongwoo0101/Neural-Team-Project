@@ -1,4 +1,4 @@
-def load_mnist(path, kind='train'):
+def load_mnist(path, kind):
     import os
     import gzip
     import numpy as np
