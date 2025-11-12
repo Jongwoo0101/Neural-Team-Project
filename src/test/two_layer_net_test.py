@@ -6,7 +6,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from data.mnist_reader import load_mnist
 from common.functions import to_one_hot
-from two_layer_net import TwoLayerNet
+from models.two_layer_net import TwoLayerNet
 
 x_train, t_train = load_mnist('../data', kind='train')
 
