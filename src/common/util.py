@@ -5,7 +5,11 @@ import numpy as np
 def smooth_curve(x):
     """손실 함수의 그래프를 매끄럽게 하기 위해 사용
     
+<<<<<<< HEAD
     참고：http://glowingpython.blogspot.jp/2012/02/convolution-with-numpy.html
+=======
+    참고: http://glowingpython.blogspot.jp/2012/02/convolution-with-numpy.html
+>>>>>>> dfde79658715f352bb55aadf0bf09f4ac72352ed
     """
     window_len = 11
     s = np.r_[x[window_len-1:0:-1], x, x[-1:-window_len:-1]]

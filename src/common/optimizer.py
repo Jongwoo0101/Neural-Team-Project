@@ -3,7 +3,11 @@ import numpy as np
 
 class SGD:
 
+<<<<<<< HEAD
     """í™•ë¥ ì  ê²½ì‚¬ í•˜ê°•ë²•ï¼ˆStochastic Gradient Descentï¼‰"""
+=======
+    """È®·üÀû °æ»ç ÇÏ°­¹ý£¨Stochastic Gradient Descent£©"""
+>>>>>>> dfde79658715f352bb55aadf0bf09f4ac72352ed
 
     def __init__(self, lr=0.01):
         self.lr = lr
@@ -15,7 +19,11 @@ class SGD:
 
 class Momentum:
 
+<<<<<<< HEAD
     """ëª¨ë©˜í…€ SGD"""
+=======
+    """¸ð¸àÅÒ SGD"""
+>>>>>>> dfde79658715f352bb55aadf0bf09f4ac72352ed
 
     def __init__(self, lr=0.01, momentum=0.9):
         self.lr = lr
@@ -36,7 +44,11 @@ class Momentum:
 class Nesterov:
 
     """Nesterov's Accelerated Gradient (http://arxiv.org/abs/1212.0901)"""
+<<<<<<< HEAD
     # NAGëŠ” ëª¨ë©˜í…€ì—ì„œ í•œ ë‹¨ê³„ ë°œì „í•œ ë°©ë²•ì´ë‹¤. (http://newsight.tistory.com/224)
+=======
+    # NAG´Â ¸ð¸àÅÒ¿¡¼­ ÇÑ ´Ü°è ¹ßÀüÇÑ ¹æ¹ýÀÌ´Ù. (http://newsight.tistory.com/224)
+>>>>>>> dfde79658715f352bb55aadf0bf09f4ac72352ed
     
     def __init__(self, lr=0.01, momentum=0.9):
         self.lr = lr
