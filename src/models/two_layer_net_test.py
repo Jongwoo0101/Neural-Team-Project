@@ -8,13 +8,10 @@ from data.mnist_reader import load_mnist
 from common.functions import to_one_hot
 from two_layer_net import TwoLayerNet
 
-# ?•™?Šµ(train) ?°?´?„° ë¶ˆëŸ¬?˜¤ê¸?
 x_train, t_train = load_mnist('../data', kind='train')
 
-# ?…Œ?Š¤?Š¸(test) ?°?´?„° ë¶ˆëŸ¬?˜¤ê¸?
 x_test, t_test = load_mnist('../data', kind='t10k')
 
-# ê°? ? •ê·œí™” 
 x_train = x_train.astype(np.float32) / 255.0
 x_test = x_test.astype(np.float32) / 255.0
 
@@ -35,7 +32,7 @@ iter_per_epoch = max(train_size / batch_size, 1)
 for i in range(iters_num):
     batch_mask = np.random.choice(train_size, batch_size)
     x_batch = x_train[batch_mask]
-    t_batch = to_one_hot(t_train[batch_mask]) # ?› ?•« ?¸ì½”ë”© ?•„?š”
+    t_batch = to_one_hot(t_train[batch_mask])
     
     grad = network.gradient(x_batch, t_batch)
     
@@ -53,7 +50,6 @@ for i in range(iters_num):
         
         print(f"train acc: {train_acc}\ntest acc: {test_acc}")
         
-# ì†ì‹¤ ê·¸ë˜í”„
 plt.figure(figsize=(10, 4))
 plt.plot(np.arange(len(train_loss_list)), train_loss_list, label='Training Loss')
 plt.title('Training Loss Curve')
@@ -63,7 +59,6 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# ì •í™•ë„ ê·¸ë˜í”„
 epochs = np.arange(len(train_acc_list))
 plt.figure(figsize=(10, 4))
 plt.plot(epochs, train_acc_list, label='Train Accuracy')
