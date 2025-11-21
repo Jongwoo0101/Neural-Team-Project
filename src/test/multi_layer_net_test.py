@@ -1,6 +1,10 @@
+"""
+cd src
+cd test
+python multi_layer_net_test.py
+"""
 import sys, os
 import matplotlib.pyplot as plt
-
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from common.util import smooth_curve
@@ -53,7 +57,11 @@ for i in range(max_iterations):
         for key in optimizers.keys():
             loss = networks[key].loss(x_batch, t_batch)
             print(key + ":" + str(loss))
-
+# 2.5 학습 후 최종 정확도 계산 및 출력==========
+for key in optimizers.keys():
+    network = networks[key]
+    test_acc = network.accuracy(x_test, t_test)
+    print(f"[{key}] 테스트 정확도: {test_acc:.4f}")
 
 # 3. 그래프 그리기==========
 markers = {"SGD": "o", "Momentum": "x", "AdaGrad": "s", "Adam": "D"}
