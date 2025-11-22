@@ -13,8 +13,6 @@ from common.util import smooth_curve
 from models.multi_layer_net import MultiLayerNet
 from common.optimizer import *
 from data.mnist_reader import load_mnist
-
-
 # 0. MNIST 데이터 읽기==========
 x_train, t_train = load_mnist('../data', kind='train')
 x_test, t_test = load_mnist('../data', kind='t10k')
@@ -23,6 +21,45 @@ train_size = x_train.shape[0]
 batch_size = 128
 max_iterations = 2000
 iter_per_epoch = max(train_size / batch_size, 1)
+# 0.5 실험 설정 후보 값 정의==========
+# 0.5-1. 공통 하이퍼파라미터
+COMMON_HPARAMS = {
+    'learning_rate': [1e-1, 1e-2, 1e-3, 1e-4],# 일반적으로 가장 중요.
+    'batch_size': [32, 64, 128, 256, 500],# 훈련 안정성과 속도에 영향
+    'max_iterations': [500, 1000, 2000, 4000, 5000],# 충분한 수렴 시간 보장 위함.
+}
+# 0.5-2. MultiLayerNet 모델 설정 후보
+MODEL_HPARAMS = {
+    # 활성화 함수와 이에 맞는 가중치 초기화 세트
+    'activation_init_sets': [
+        {'activation': 'relu', 'weight_init_std': 'relu'},       # 권장: He 초기값
+        {'activation': 'sigmoid', 'weight_init_std': 'sigmoid'}  # 권장: Xavier 초기값
+    ],
+    # 은닉층 구조: 층의 개수(깊이, index)만 변경 (뉴런 100개 고정)
+    'hidden_size_lists': {
+        1: [100],
+        2: [100, 100],
+        3: [100, 100, 100],
+        4: [100, 100, 100, 100],
+        5: [100, 100, 100, 100, 100],
+        6: [100, 100, 100, 100, 100, 100],
+    },
+    # L2 규제 강도: 0은 규제x
+    'weight_decay_lambda': [0, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4],
+}
+#0. 3. 옵티마이저별 특정 설정 (Adam, AdaGrad)
+# 권장: beta1, beta2 각 기본값인 0.9, 0.999을 유지
+# lr만 COMMON_HPARAMS의 learning_rate key에서 가져옴.
+OPTIMIZER_SETTINGS = {
+    'Adam': {
+        'lr': COMMON_HPARAMS['learning_rate'],
+        'beta1': [0.9],  # 고정
+        'beta2': [0.999] # 고정
+    },
+    'AdaGrad': {
+        'lr': COMMON_HPARAMS['learning_rate']
+    }
+}
 
 # 1. 실험용 설정==========
 optimizers = {}
