@@ -91,10 +91,6 @@ for key in optimizers.keys():
 # 3-1-2. 평활화된 데이터의 최소값으로 min_y1 설정
 min_y1 = max(0.0, np.min(smoothed_losses) - 0.05)
 max_y1 = 1.0
-# 손실을 기록한 리스트 (train_loss[key])는 매 반복마다 계산된 원래의 손실 값, smooth_curve 함수를 적용한 것과는 차이가 있어 위 방식을 채택
-# all_losses = [loss for key in optimizers.keys() for loss in train_loss[key]]
-# min_y1 = max(0.0, np.min(all_losses) - 0.05)
-# max_y1=1.0
 
 x = np.arange(max_iterations)
 for key in optimizers.keys():
