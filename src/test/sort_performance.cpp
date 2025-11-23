@@ -1,7 +1,7 @@
 /*
 1. 설명
 sort_performance.cpp
-output_log.txt 파일을 읽어 FINAL ACC와 loss를 기준으로 각각 정렬한 후, 원본 로그 형식 그대로 sort_acc.txt와 sort_loss.txt 두 파일에 기록
+loss_acc_log.txt 파일을 읽어 FINAL ACC와 loss를 기준으로 각각 정렬한 후, 원본 로그 형식 그대로 sort_acc.txt와 sort_loss.txt 두 파일에 기록
 :cout에 대해서, 한글로 출력시 깨지는 문제가 있어 모두 영어로 구성
 2-1. 실행
 F6을 눌러도 정상 실행되도록 파일 위치를 세팅했다.
