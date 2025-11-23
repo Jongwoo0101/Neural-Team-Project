@@ -53,7 +53,7 @@ def summarize_results(params, final_loss, final_acc):
         f"Batch: {params['batch_size']:>4}, "               # 64, 128, 256... -> 4칸 확보 (오른쪽 정렬)
         f"Iters: {params['max_iterations']:>4}, "            # 500, 1000... -> 4칸 확보 (오른쪽 정렬)
         f"Depth: {len(params['hidden_size_list']):>1}, "            # 1~6... -> 1칸 확보
-        f"Act/Init: {params['activation']}/{params['weight_init_std']:<7}, "    # relu/relu, sigmoid/sigmoid -> 7칸 확보
+        f"Act/Init: {params['activation']}/{params['weight_init_std']:<16}, "    # relu/relu, sigmoid/sigmoid -> 16칸 확보
         f"L2: {params['weight_decay_lambda']:<7}"                    # 1e-08, 0 등 -> 7칸 확보
     )
     result_str = f"| FINAL LOSS: {final_loss:.6f} | Test ACC: {final_acc:.4f} |"

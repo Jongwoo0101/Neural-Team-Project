@@ -1,0 +1,1152 @@
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.302910 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.186918 | Test ACC: 0.1542 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.298905 | Test ACC: 0.1005 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.272676 | Test ACC: 0.1075 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.357471 | Test ACC: 0.1337 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.283637 | Test ACC: 0.1531 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.299999 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.312337 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.305976 | Test ACC: 0.1001 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.329074 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.093343 | Test ACC: 0.1654 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.449566 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.308142 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.301148 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.329364 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.316269 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.464278 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.418696 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.294017 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.290696 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.303672 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.290369 | Test ACC: 0.1152 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.452309 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.569382 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.319320 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.308742 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.313817 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.329076 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.483207 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.837663 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.303948 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.304861 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.303143 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.329890 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.475353 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.944328 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.677377 | Test ACC: 0.4232 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.595161 | Test ACC: 0.4548 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.561489 | Test ACC: 0.3975 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.533277 | Test ACC: 0.4048 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.082059 | Test ACC: 0.1003 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 3.319109 | Test ACC: 0.1157 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.318171 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.291320 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.662218 | Test ACC: 0.2472 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.963471 | Test ACC: 0.2168 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.479757 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 3.077425 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.290386 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.347175 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.296048 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.319911 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.424290 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.442267 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.441939 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.398818 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.371602 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.365135 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.350289 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.310762 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.305247 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.315168 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.308674 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.333434 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.392802 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.315544 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.457022 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.311744 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.335044 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.336670 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.339369 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.300348 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.306610 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.286631 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.327083 | Test ACC: 0.1002 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.319938 | Test ACC: 0.1001 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.411905 | Test ACC: 0.1321 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.352197 | Test ACC: 0.1075 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.294186 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.303580 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.303644 | Test ACC: 0.0999 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.310627 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.462178 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.413326 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.316628 | Test ACC: 0.1001 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.307007 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.263590 | Test ACC: 0.1091 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.329787 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.454882 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.367633 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.320580 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.304791 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.299179 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.321523 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.447748 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.447057 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.302341 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.311391 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.296783 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.346940 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.965206 | Test ACC: 0.1955 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.632604 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.320623 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.297199 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.313391 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.325836 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.487394 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.977429 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.964942 | Test ACC: 0.1916 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.455763 | Test ACC: 0.3094 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.212595 | Test ACC: 0.2094 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.054954 | Test ACC: 0.2421 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.897184 | Test ACC: 0.2285 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 3.857373 | Test ACC: 0.1734 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.292496 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.035254 | Test ACC: 0.1986 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.319297 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.336726 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.478384 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 3.026567 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.306371 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.391428 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.346498 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.378560 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.317737 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.606239 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.381686 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.407404 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.321279 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.361972 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.344614 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.306774 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.364476 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.380836 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.375185 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.320514 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.311410 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.320957 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.326950 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.517819 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.367300 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.315317 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.315602 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.324134 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.286583 | Test ACC: 0.1060 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.120675 | Test ACC: 0.1597 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.032463 | Test ACC: 0.1951 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.308871 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.441361 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.448340 | Test ACC: 0.1006 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.301870 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.307965 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.299684 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.319291 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.444579 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.609942 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.310180 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.304813 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.309282 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.328961 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.275810 | Test ACC: 0.1894 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.695789 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.306099 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.975778 | Test ACC: 0.1897 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.310989 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.321644 | Test ACC: 0.1005 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.463567 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.737468 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.311375 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.292975 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.302391 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.326276 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.475408 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.704739 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.302083 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.303038 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.307242 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.324173 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.489960 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.818458 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.512118 | Test ACC: 0.3245 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.625822 | Test ACC: 0.3196 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.233994 | Test ACC: 0.4396 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.658581 | Test ACC: 0.2766 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.095793 | Test ACC: 0.2176 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.659290 | Test ACC: 0.1921 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.713022 | Test ACC: 0.2197 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.644788 | Test ACC: 0.2748 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.312566 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.986708 | Test ACC: 0.1996 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.871883 | Test ACC: 0.1874 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.801208 | Test ACC: 0.1312 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.754093 | Test ACC: 0.2180 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.336790 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.367908 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.320642 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.331305 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.905996 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.336098 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.327524 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.365445 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.319159 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.332721 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.340620 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.324767 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.322642 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.305809 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.313914 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.304280 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.310924 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.320966 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.376973 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.318052 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.304807 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.336141 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.322945 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.308599 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.303339 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.311300 | Test ACC: 0.1001 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.276602 | Test ACC: 0.1175 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.414882 | Test ACC: 0.1049 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.428679 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.302839 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.297843 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.304716 | Test ACC: 0.1010 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.312732 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.440355 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.382770 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.295419 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.294389 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.304864 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.333308 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.437474 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.569589 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.307077 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.302407 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.312457 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.325319 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.468531 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.509304 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.302481 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.306942 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.303946 | Test ACC: 0.1003 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.318231 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.454477 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.479160 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.297792 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.300215 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.310776 | Test ACC: 0.1001 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.323481 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.471372 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.572909 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.927945 | Test ACC: 0.1702 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.380799 | Test ACC: 0.4078 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.454689 | Test ACC: 0.3464 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.550283 | Test ACC: 0.3579 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.711303 | Test ACC: 0.3305 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 3.349571 | Test ACC: 0.2719 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.797627 | Test ACC: 0.2684 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.706829 | Test ACC: 0.2651 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.552454 | Test ACC: 0.2780 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.407354 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.268845 | Test ACC: 0.2066 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 3.176942 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.358471 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.360364 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.383672 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.319674 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.351438 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.459211 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.379950 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.314978 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.307742 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.324313 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.334681 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.336348 | Test ACC: 0.1681 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.308257 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.358875 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.381591 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.365662 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.311236 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.306899 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.334808 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.312706 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.371853 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.339149 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.318917 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.1    , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.312770 | Test ACC: 0.1000 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 1.188504 | Test ACC: 0.5318 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.200510 | Test ACC: 0.5034 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.254588 | Test ACC: 0.4892 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.035197 | Test ACC: 0.5155 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.422669 | Test ACC: 0.4779 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.030815 | Test ACC: 0.5387 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.576244 | Test ACC: 0.7569 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.747848 | Test ACC: 0.7290 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.855466 | Test ACC: 0.5874 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.168993 | Test ACC: 0.5856 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.610594 | Test ACC: 0.6945 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.011382 | Test ACC: 0.5948 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.437778 | Test ACC: 0.7774 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.794138 | Test ACC: 0.7607 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.552962 | Test ACC: 0.7681 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.681027 | Test ACC: 0.7700 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.587442 | Test ACC: 0.7309 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.795582 | Test ACC: 0.7418 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.405864 | Test ACC: 0.7987 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.731818 | Test ACC: 0.7936 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.698108 | Test ACC: 0.7872 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.732511 | Test ACC: 0.7815 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.454260 | Test ACC: 0.7949 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.654955 | Test ACC: 0.7605 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.580487 | Test ACC: 0.7408 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.551016 | Test ACC: 0.7597 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.542082 | Test ACC: 0.7964 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.589995 | Test ACC: 0.7845 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.464318 | Test ACC: 0.7865 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.687071 | Test ACC: 0.7988 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.632209 | Test ACC: 0.7800 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.640378 | Test ACC: 0.7866 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.534518 | Test ACC: 0.7474 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.551997 | Test ACC: 0.7801 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.493905 | Test ACC: 0.7768 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.611931 | Test ACC: 0.7697 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.973769 | Test ACC: 0.5439 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.132334 | Test ACC: 0.5208 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.294214 | Test ACC: 0.4736 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.415215 | Test ACC: 0.3870 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.989292 | Test ACC: 0.6030 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.318062 | Test ACC: 0.4687 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.287548 | Test ACC: 0.4987 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.264852 | Test ACC: 0.5267 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.183281 | Test ACC: 0.5033 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.044033 | Test ACC: 0.4769 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.368508 | Test ACC: 0.4148 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.423086 | Test ACC: 0.4398 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.368578 | Test ACC: 0.3804 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.242946 | Test ACC: 0.4905 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.260852 | Test ACC: 0.4786 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.324016 | Test ACC: 0.3702 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.299371 | Test ACC: 0.5051 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.400434 | Test ACC: 0.4044 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.312943 | Test ACC: 0.4689 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.349689 | Test ACC: 0.3925 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.381599 | Test ACC: 0.3852 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.501545 | Test ACC: 0.3400 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.123849 | Test ACC: 0.4903 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.413178 | Test ACC: 0.4516 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.476609 | Test ACC: 0.3757 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.363764 | Test ACC: 0.3603 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.448341 | Test ACC: 0.3082 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.434306 | Test ACC: 0.3099 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.459120 | Test ACC: 0.3635 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.557388 | Test ACC: 0.3482 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.618028 | Test ACC: 0.3319 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.511570 | Test ACC: 0.3158 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.246814 | Test ACC: 0.4611 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.481339 | Test ACC: 0.3490 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.529121 | Test ACC: 0.3646 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.806981 | Test ACC: 0.2717 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.882862 | Test ACC: 0.6031 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.021155 | Test ACC: 0.6594 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.445061 | Test ACC: 0.4259 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.947381 | Test ACC: 0.6155 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.703318 | Test ACC: 0.6765 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.294766 | Test ACC: 0.5261 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 1.176766 | Test ACC: 0.4424 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.754322 | Test ACC: 0.7444 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.568048 | Test ACC: 0.7034 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.931557 | Test ACC: 0.4619 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.584641 | Test ACC: 0.7870 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.681260 | Test ACC: 0.7593 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.733333 | Test ACC: 0.7063 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.524122 | Test ACC: 0.8071 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.459275 | Test ACC: 0.8080 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.021689 | Test ACC: 0.5200 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.482406 | Test ACC: 0.8151 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.551821 | Test ACC: 0.8053 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.400173 | Test ACC: 0.8153 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.519570 | Test ACC: 0.7957 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.413594 | Test ACC: 0.8119 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.461737 | Test ACC: 0.8013 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.769931 | Test ACC: 0.8028 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.505730 | Test ACC: 0.7985 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.364686 | Test ACC: 0.8062 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.500328 | Test ACC: 0.8153 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.603399 | Test ACC: 0.8005 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.542252 | Test ACC: 0.8270 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.443631 | Test ACC: 0.8166 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.534340 | Test ACC: 0.7863 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.603640 | Test ACC: 0.7764 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.421451 | Test ACC: 0.7966 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.495786 | Test ACC: 0.7868 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.496122 | Test ACC: 0.8155 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.497642 | Test ACC: 0.8180 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.690276 | Test ACC: 0.8100 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.223087 | Test ACC: 0.4842 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.323429 | Test ACC: 0.4353 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.082347 | Test ACC: 0.5510 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.137489 | Test ACC: 0.5468 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.301209 | Test ACC: 0.4768 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.234234 | Test ACC: 0.4918 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.406585 | Test ACC: 0.4568 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.174560 | Test ACC: 0.5505 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.261317 | Test ACC: 0.5187 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.100294 | Test ACC: 0.5619 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.131437 | Test ACC: 0.4980 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.500720 | Test ACC: 0.4333 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.312921 | Test ACC: 0.4670 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.301157 | Test ACC: 0.4238 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.329650 | Test ACC: 0.4150 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.342065 | Test ACC: 0.5366 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.117165 | Test ACC: 0.5134 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.462844 | Test ACC: 0.3861 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.677773 | Test ACC: 0.2756 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.592155 | Test ACC: 0.3174 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.479393 | Test ACC: 0.2816 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.597462 | Test ACC: 0.2657 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.382175 | Test ACC: 0.4052 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.416641 | Test ACC: 0.3727 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.473776 | Test ACC: 0.3461 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.395330 | Test ACC: 0.3903 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.490903 | Test ACC: 0.4367 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.768598 | Test ACC: 0.2320 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.260756 | Test ACC: 0.4868 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.205221 | Test ACC: 0.2005 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.339176 | Test ACC: 0.3797 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.629788 | Test ACC: 0.2721 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.595614 | Test ACC: 0.3493 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.469449 | Test ACC: 0.3292 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.408389 | Test ACC: 0.4623 |
+Optimizer: Adam   , LR: 0.01   , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.480029 | Test ACC: 0.3977 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 1.124013 | Test ACC: 0.5096 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.177345 | Test ACC: 0.5045 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.158371 | Test ACC: 0.5088 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.056274 | Test ACC: 0.5675 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.981042 | Test ACC: 0.6175 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.304498 | Test ACC: 0.4746 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.747518 | Test ACC: 0.7761 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.755445 | Test ACC: 0.7558 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.736394 | Test ACC: 0.7508 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.884908 | Test ACC: 0.6941 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.044060 | Test ACC: 0.6069 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.640835 | Test ACC: 0.6732 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.514158 | Test ACC: 0.7999 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.527887 | Test ACC: 0.7734 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.525301 | Test ACC: 0.7776 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.558003 | Test ACC: 0.7856 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.549365 | Test ACC: 0.7739 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.557510 | Test ACC: 0.7621 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.643849 | Test ACC: 0.7749 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.574835 | Test ACC: 0.7815 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.554581 | Test ACC: 0.7839 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.480004 | Test ACC: 0.8037 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.560713 | Test ACC: 0.7195 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.609013 | Test ACC: 0.7640 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.701592 | Test ACC: 0.7305 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.477033 | Test ACC: 0.7864 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.494707 | Test ACC: 0.7930 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.526170 | Test ACC: 0.8031 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.529433 | Test ACC: 0.8004 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.554028 | Test ACC: 0.7965 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.522981 | Test ACC: 0.7950 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.525850 | Test ACC: 0.7968 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.476037 | Test ACC: 0.7932 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.599045 | Test ACC: 0.7656 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.637372 | Test ACC: 0.8008 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.605495 | Test ACC: 0.7994 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.213154 | Test ACC: 0.4930 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.110080 | Test ACC: 0.5453 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.175578 | Test ACC: 0.4864 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.106620 | Test ACC: 0.5522 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.015113 | Test ACC: 0.6310 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.115625 | Test ACC: 0.5719 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.094540 | Test ACC: 0.5695 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.045069 | Test ACC: 0.5553 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.182021 | Test ACC: 0.5286 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.934388 | Test ACC: 0.5744 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.094504 | Test ACC: 0.5404 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.223587 | Test ACC: 0.5032 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.054310 | Test ACC: 0.5655 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.254501 | Test ACC: 0.3952 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.035580 | Test ACC: 0.5787 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.109044 | Test ACC: 0.5962 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.213753 | Test ACC: 0.5078 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.201524 | Test ACC: 0.4830 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.277331 | Test ACC: 0.4506 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.429253 | Test ACC: 0.3654 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.086174 | Test ACC: 0.4912 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.367897 | Test ACC: 0.3836 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.282866 | Test ACC: 0.4333 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.473549 | Test ACC: 0.3760 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.500310 | Test ACC: 0.3619 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.344468 | Test ACC: 0.4468 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.469991 | Test ACC: 0.3976 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.182985 | Test ACC: 0.4992 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.194741 | Test ACC: 0.5037 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.386194 | Test ACC: 0.4285 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.011190 | Test ACC: 0.5824 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.280053 | Test ACC: 0.4411 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.357529 | Test ACC: 0.4718 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.368617 | Test ACC: 0.3579 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.423144 | Test ACC: 0.4063 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.686410 | Test ACC: 0.3187 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.886861 | Test ACC: 0.6150 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.761214 | Test ACC: 0.7211 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.680261 | Test ACC: 0.6895 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.152982 | Test ACC: 0.5678 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.645565 | Test ACC: 0.6903 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.972245 | Test ACC: 0.5797 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.852813 | Test ACC: 0.7198 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.609439 | Test ACC: 0.7997 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.573436 | Test ACC: 0.7733 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.449037 | Test ACC: 0.8055 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.600714 | Test ACC: 0.7418 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.769465 | Test ACC: 0.6931 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.461533 | Test ACC: 0.8250 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.444194 | Test ACC: 0.8128 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.463065 | Test ACC: 0.8193 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.511284 | Test ACC: 0.8038 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.382813 | Test ACC: 0.8150 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.489104 | Test ACC: 0.8190 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.371476 | Test ACC: 0.8237 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.561066 | Test ACC: 0.8197 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.426253 | Test ACC: 0.7910 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.492035 | Test ACC: 0.8146 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.443222 | Test ACC: 0.7953 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.567113 | Test ACC: 0.8250 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.391690 | Test ACC: 0.8276 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.457826 | Test ACC: 0.8263 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.493283 | Test ACC: 0.8323 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.387037 | Test ACC: 0.8207 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.277525 | Test ACC: 0.8205 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.423236 | Test ACC: 0.8285 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.352080 | Test ACC: 0.8236 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.529769 | Test ACC: 0.8074 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.395619 | Test ACC: 0.8134 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.507857 | Test ACC: 0.7971 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.436705 | Test ACC: 0.8028 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.457060 | Test ACC: 0.8140 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.865663 | Test ACC: 0.6045 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.950835 | Test ACC: 0.6331 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.949087 | Test ACC: 0.5732 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.852348 | Test ACC: 0.5802 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.067044 | Test ACC: 0.5729 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.048382 | Test ACC: 0.5942 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.237878 | Test ACC: 0.5279 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.877683 | Test ACC: 0.5971 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.065598 | Test ACC: 0.5218 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.031589 | Test ACC: 0.5981 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.106298 | Test ACC: 0.5175 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.997127 | Test ACC: 0.6288 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.295654 | Test ACC: 0.3996 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.226283 | Test ACC: 0.4701 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.165105 | Test ACC: 0.4677 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.234574 | Test ACC: 0.4774 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.268759 | Test ACC: 0.4522 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.384196 | Test ACC: 0.4393 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.153703 | Test ACC: 0.5011 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.272187 | Test ACC: 0.4270 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.438280 | Test ACC: 0.3854 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.236323 | Test ACC: 0.5151 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.198728 | Test ACC: 0.5010 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.293418 | Test ACC: 0.5092 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.139859 | Test ACC: 0.5063 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.515329 | Test ACC: 0.3723 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.491817 | Test ACC: 0.3668 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.494224 | Test ACC: 0.3939 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.181392 | Test ACC: 0.4678 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.356515 | Test ACC: 0.4093 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.404506 | Test ACC: 0.3863 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.242654 | Test ACC: 0.4958 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.369902 | Test ACC: 0.4179 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.605093 | Test ACC: 0.2563 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.237803 | Test ACC: 0.4094 |
+Optimizer: Adam   , LR: 0.01   , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.290868 | Test ACC: 0.5046 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.868390 | Test ACC: 0.6942 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.123391 | Test ACC: 0.6844 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.789600 | Test ACC: 0.6596 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.174857 | Test ACC: 0.6954 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.231448 | Test ACC: 0.7476 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.108414 | Test ACC: 0.7186 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 1.004453 | Test ACC: 0.7412 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.624680 | Test ACC: 0.7435 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.723602 | Test ACC: 0.7497 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.000087 | Test ACC: 0.7602 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.189803 | Test ACC: 0.7523 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.585630 | Test ACC: 0.7313 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.919850 | Test ACC: 0.7509 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.957026 | Test ACC: 0.7375 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.498145 | Test ACC: 0.7564 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.138422 | Test ACC: 0.7392 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.485843 | Test ACC: 0.7599 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.969128 | Test ACC: 0.7656 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.758566 | Test ACC: 0.7657 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.780718 | Test ACC: 0.7648 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.849438 | Test ACC: 0.7553 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.946287 | Test ACC: 0.7466 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.874240 | Test ACC: 0.7431 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.859885 | Test ACC: 0.7568 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.638958 | Test ACC: 0.7557 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.776148 | Test ACC: 0.7604 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.765817 | Test ACC: 0.7503 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.599668 | Test ACC: 0.7517 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.015203 | Test ACC: 0.7433 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.754175 | Test ACC: 0.7589 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.722026 | Test ACC: 0.7481 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.651907 | Test ACC: 0.7781 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.577634 | Test ACC: 0.7714 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.478088 | Test ACC: 0.7638 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.593379 | Test ACC: 0.7637 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.790012 | Test ACC: 0.7710 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.742550 | Test ACC: 0.7388 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.623269 | Test ACC: 0.7648 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.585807 | Test ACC: 0.7571 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.727882 | Test ACC: 0.7398 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.817770 | Test ACC: 0.7511 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.593417 | Test ACC: 0.7511 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.708822 | Test ACC: 0.7539 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.752896 | Test ACC: 0.7150 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.605024 | Test ACC: 0.7368 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.717566 | Test ACC: 0.7239 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.705538 | Test ACC: 0.7149 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.700787 | Test ACC: 0.7338 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.845591 | Test ACC: 0.7179 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.704191 | Test ACC: 0.7015 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.805671 | Test ACC: 0.7043 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.880729 | Test ACC: 0.6731 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.654251 | Test ACC: 0.6930 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.812247 | Test ACC: 0.7066 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.003289 | Test ACC: 0.6121 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.809245 | Test ACC: 0.6410 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.884539 | Test ACC: 0.6723 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.009731 | Test ACC: 0.5932 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.832469 | Test ACC: 0.6409 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.936790 | Test ACC: 0.6558 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.070116 | Test ACC: 0.4736 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.988703 | Test ACC: 0.4424 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.881448 | Test ACC: 0.6229 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.034640 | Test ACC: 0.5230 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.023834 | Test ACC: 0.6138 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.094833 | Test ACC: 0.5621 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.120286 | Test ACC: 0.5056 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.190273 | Test ACC: 0.5040 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.099437 | Test ACC: 0.4617 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.112550 | Test ACC: 0.5551 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.045247 | Test ACC: 0.5729 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.133346 | Test ACC: 0.5356 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.883926 | Test ACC: 0.7560 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.578705 | Test ACC: 0.7540 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.594358 | Test ACC: 0.7745 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.595501 | Test ACC: 0.7080 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.645061 | Test ACC: 0.7356 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.831720 | Test ACC: 0.7408 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 1.302479 | Test ACC: 0.7911 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.731220 | Test ACC: 0.7879 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.767571 | Test ACC: 0.7842 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.880786 | Test ACC: 0.7912 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.651065 | Test ACC: 0.7732 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.909421 | Test ACC: 0.7783 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.409835 | Test ACC: 0.7891 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.610626 | Test ACC: 0.7804 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.539333 | Test ACC: 0.7714 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.491790 | Test ACC: 0.7801 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.702097 | Test ACC: 0.7604 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.802024 | Test ACC: 0.7944 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.512026 | Test ACC: 0.7976 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.313059 | Test ACC: 0.8062 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.651965 | Test ACC: 0.7760 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.575703 | Test ACC: 0.7772 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.518270 | Test ACC: 0.7924 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.517200 | Test ACC: 0.7922 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.487777 | Test ACC: 0.7927 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.495377 | Test ACC: 0.7948 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.638969 | Test ACC: 0.7942 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.417485 | Test ACC: 0.7992 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.672826 | Test ACC: 0.7994 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.610900 | Test ACC: 0.7712 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.334490 | Test ACC: 0.8029 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.375838 | Test ACC: 0.8016 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.587314 | Test ACC: 0.7901 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.468675 | Test ACC: 0.7706 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.373732 | Test ACC: 0.7942 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.629754 | Test ACC: 0.7972 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.650198 | Test ACC: 0.7710 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.664105 | Test ACC: 0.7612 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.666668 | Test ACC: 0.7516 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.655431 | Test ACC: 0.7524 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.628390 | Test ACC: 0.7694 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.659704 | Test ACC: 0.7611 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.653808 | Test ACC: 0.7322 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.778627 | Test ACC: 0.7180 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.727211 | Test ACC: 0.7290 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.562963 | Test ACC: 0.7266 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.641185 | Test ACC: 0.7307 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.705865 | Test ACC: 0.7429 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.748037 | Test ACC: 0.7027 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.663715 | Test ACC: 0.7186 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.813603 | Test ACC: 0.7184 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.700548 | Test ACC: 0.6976 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.661500 | Test ACC: 0.7092 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.800282 | Test ACC: 0.7089 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.816899 | Test ACC: 0.6662 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.778836 | Test ACC: 0.6763 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.945320 | Test ACC: 0.6613 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.762702 | Test ACC: 0.6592 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.738380 | Test ACC: 0.7170 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.948085 | Test ACC: 0.6381 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.022512 | Test ACC: 0.6051 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.947947 | Test ACC: 0.5742 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.047142 | Test ACC: 0.6102 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.985617 | Test ACC: 0.5927 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.969621 | Test ACC: 0.5532 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.992541 | Test ACC: 0.6080 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.832767 | Test ACC: 0.6546 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.085426 | Test ACC: 0.5517 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.003532 | Test ACC: 0.5857 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.161008 | Test ACC: 0.6236 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.048589 | Test ACC: 0.5181 |
+Optimizer: Adam   , LR: 0.001  , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.197647 | Test ACC: 0.5553 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.852347 | Test ACC: 0.7106 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.641827 | Test ACC: 0.7668 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.914039 | Test ACC: 0.7685 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.423074 | Test ACC: 0.6843 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.102211 | Test ACC: 0.6907 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.910227 | Test ACC: 0.7088 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 1.076720 | Test ACC: 0.7752 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.163510 | Test ACC: 0.7504 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.096179 | Test ACC: 0.7753 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.232976 | Test ACC: 0.7726 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.606355 | Test ACC: 0.7884 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.329978 | Test ACC: 0.7849 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.650997 | Test ACC: 0.7841 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.059934 | Test ACC: 0.7427 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.836968 | Test ACC: 0.7565 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.717036 | Test ACC: 0.7850 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.810661 | Test ACC: 0.7857 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.687593 | Test ACC: 0.7811 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.787153 | Test ACC: 0.7803 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.796659 | Test ACC: 0.7636 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.820284 | Test ACC: 0.7913 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.631641 | Test ACC: 0.7692 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.739869 | Test ACC: 0.7834 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.761323 | Test ACC: 0.7754 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.793771 | Test ACC: 0.7805 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.747550 | Test ACC: 0.7663 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.706475 | Test ACC: 0.7712 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.815664 | Test ACC: 0.7651 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.630547 | Test ACC: 0.7718 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.797114 | Test ACC: 0.7629 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.837304 | Test ACC: 0.7688 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.582596 | Test ACC: 0.7886 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.509519 | Test ACC: 0.7852 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.656090 | Test ACC: 0.7770 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.665200 | Test ACC: 0.7768 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.546319 | Test ACC: 0.7831 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.595021 | Test ACC: 0.7741 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.599624 | Test ACC: 0.7709 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.565795 | Test ACC: 0.7903 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.600167 | Test ACC: 0.7801 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.622214 | Test ACC: 0.7738 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.571128 | Test ACC: 0.7745 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.656832 | Test ACC: 0.7621 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.526847 | Test ACC: 0.7664 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.683652 | Test ACC: 0.7529 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.585437 | Test ACC: 0.7626 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.574672 | Test ACC: 0.7429 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.750758 | Test ACC: 0.7701 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.681594 | Test ACC: 0.7397 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.724594 | Test ACC: 0.7347 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.689702 | Test ACC: 0.7391 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.716795 | Test ACC: 0.7153 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.685550 | Test ACC: 0.7209 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.670477 | Test ACC: 0.7182 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.758007 | Test ACC: 0.6685 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.811101 | Test ACC: 0.6568 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.834858 | Test ACC: 0.6530 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.932868 | Test ACC: 0.6318 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.958508 | Test ACC: 0.6589 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.861968 | Test ACC: 0.7026 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.881577 | Test ACC: 0.6293 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.063681 | Test ACC: 0.5451 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.039297 | Test ACC: 0.6138 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.074962 | Test ACC: 0.5946 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.006090 | Test ACC: 0.5310 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.983000 | Test ACC: 0.5896 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.913790 | Test ACC: 0.6069 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.098063 | Test ACC: 0.5456 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.890475 | Test ACC: 0.5898 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.011058 | Test ACC: 0.5986 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.199666 | Test ACC: 0.4632 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.041742 | Test ACC: 0.5703 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.416223 | Test ACC: 0.7615 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.633760 | Test ACC: 0.7782 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.637836 | Test ACC: 0.7702 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.689867 | Test ACC: 0.7899 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.706596 | Test ACC: 0.7360 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.644275 | Test ACC: 0.7740 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.610144 | Test ACC: 0.7910 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.644367 | Test ACC: 0.8140 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.602547 | Test ACC: 0.7835 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.567829 | Test ACC: 0.7697 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.527300 | Test ACC: 0.8046 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.627742 | Test ACC: 0.7848 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.401701 | Test ACC: 0.8166 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.653399 | Test ACC: 0.8063 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.445039 | Test ACC: 0.7970 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.594040 | Test ACC: 0.7956 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.587425 | Test ACC: 0.8076 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.528311 | Test ACC: 0.7960 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.597474 | Test ACC: 0.8143 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.399336 | Test ACC: 0.7872 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.550084 | Test ACC: 0.8056 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.698301 | Test ACC: 0.8007 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.768314 | Test ACC: 0.7749 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.748694 | Test ACC: 0.8054 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.532742 | Test ACC: 0.8006 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.507954 | Test ACC: 0.8167 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.425065 | Test ACC: 0.7997 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.320078 | Test ACC: 0.8134 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.620504 | Test ACC: 0.7963 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.672276 | Test ACC: 0.7718 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.554348 | Test ACC: 0.8119 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 0.582308 | Test ACC: 0.8029 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 0.522896 | Test ACC: 0.8090 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 0.483183 | Test ACC: 0.8139 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.431626 | Test ACC: 0.8036 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 0.636825 | Test ACC: 0.7878 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.512119 | Test ACC: 0.7909 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.599020 | Test ACC: 0.7803 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.567230 | Test ACC: 0.7782 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.517751 | Test ACC: 0.7824 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.578478 | Test ACC: 0.7841 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.646674 | Test ACC: 0.7978 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.669597 | Test ACC: 0.7577 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.641839 | Test ACC: 0.7377 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.481055 | Test ACC: 0.7731 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.625638 | Test ACC: 0.7613 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.600770 | Test ACC: 0.7650 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.741129 | Test ACC: 0.7805 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.627997 | Test ACC: 0.7533 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.744850 | Test ACC: 0.7137 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.577211 | Test ACC: 0.7410 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.618097 | Test ACC: 0.7272 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.661753 | Test ACC: 0.7116 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.682362 | Test ACC: 0.7376 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.664797 | Test ACC: 0.7311 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.669905 | Test ACC: 0.7021 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.697746 | Test ACC: 0.7013 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.696495 | Test ACC: 0.7076 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.788356 | Test ACC: 0.6552 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.697397 | Test ACC: 0.7183 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.866885 | Test ACC: 0.6377 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.689539 | Test ACC: 0.6827 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.779001 | Test ACC: 0.7114 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.711283 | Test ACC: 0.7277 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.820119 | Test ACC: 0.6301 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.789441 | Test ACC: 0.7070 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.872995 | Test ACC: 0.6076 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.839186 | Test ACC: 0.5696 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.938639 | Test ACC: 0.6445 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.869919 | Test ACC: 0.6349 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.883531 | Test ACC: 0.5955 |
+Optimizer: Adam   , LR: 0.001  , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.024027 | Test ACC: 0.6215 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 3.062285 | Test ACC: 0.7183 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 3.884889 | Test ACC: 0.7295 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 3.100733 | Test ACC: 0.7322 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 3.691990 | Test ACC: 0.7325 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 3.514007 | Test ACC: 0.7465 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 2.266382 | Test ACC: 0.7444 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 3.865705 | Test ACC: 0.7308 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 3.160098 | Test ACC: 0.7281 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.808189 | Test ACC: 0.7353 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.548119 | Test ACC: 0.7364 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 3.503049 | Test ACC: 0.7352 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.772044 | Test ACC: 0.7190 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 3.690754 | Test ACC: 0.7085 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 3.359449 | Test ACC: 0.7126 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.800196 | Test ACC: 0.7073 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.772804 | Test ACC: 0.7338 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.511135 | Test ACC: 0.6971 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 2.602659 | Test ACC: 0.7269 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.820549 | Test ACC: 0.7155 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 3.066308 | Test ACC: 0.7255 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.279626 | Test ACC: 0.7052 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 3.330309 | Test ACC: 0.7003 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 3.090789 | Test ACC: 0.6937 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 2.624143 | Test ACC: 0.6993 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.763276 | Test ACC: 0.6908 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.160998 | Test ACC: 0.6956 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.113665 | Test ACC: 0.6966 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.848299 | Test ACC: 0.7070 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.309976 | Test ACC: 0.6853 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 2.783119 | Test ACC: 0.6932 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 1.852911 | Test ACC: 0.6722 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.121651 | Test ACC: 0.6874 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.107562 | Test ACC: 0.7074 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.939219 | Test ACC: 0.6660 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.993615 | Test ACC: 0.6744 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 2.119724 | Test ACC: 0.6886 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.862353 | Test ACC: 0.7437 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.994214 | Test ACC: 0.7480 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.844847 | Test ACC: 0.7332 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.876781 | Test ACC: 0.7502 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.949486 | Test ACC: 0.7395 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.954222 | Test ACC: 0.7291 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.342008 | Test ACC: 0.7038 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.225983 | Test ACC: 0.7033 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.309319 | Test ACC: 0.6893 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.315338 | Test ACC: 0.6784 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.331845 | Test ACC: 0.6977 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.359041 | Test ACC: 0.6887 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.624928 | Test ACC: 0.5820 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.652558 | Test ACC: 0.5844 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.608738 | Test ACC: 0.6018 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.668831 | Test ACC: 0.6304 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.679174 | Test ACC: 0.6172 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.715481 | Test ACC: 0.5472 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.799808 | Test ACC: 0.3820 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.842393 | Test ACC: 0.2823 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.861632 | Test ACC: 0.2059 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.784812 | Test ACC: 0.3323 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.894194 | Test ACC: 0.3685 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.882834 | Test ACC: 0.2897 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.941927 | Test ACC: 0.2054 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.871759 | Test ACC: 0.1890 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.908110 | Test ACC: 0.2019 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.084121 | Test ACC: 0.2857 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.911054 | Test ACC: 0.2196 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.949146 | Test ACC: 0.3105 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.899315 | Test ACC: 0.1857 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 2.036468 | Test ACC: 0.1990 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 2.030813 | Test ACC: 0.1953 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 2.159412 | Test ACC: 0.2002 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 2.117501 | Test ACC: 0.2000 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.291278 | Test ACC: 0.2673 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 3.531824 | Test ACC: 0.7641 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 3.202411 | Test ACC: 0.7554 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.507081 | Test ACC: 0.7583 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.758391 | Test ACC: 0.7590 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 3.826789 | Test ACC: 0.7542 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 3.325917 | Test ACC: 0.7695 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 1.865715 | Test ACC: 0.7572 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 3.721592 | Test ACC: 0.7570 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 3.295835 | Test ACC: 0.7605 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.359274 | Test ACC: 0.7571 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.080125 | Test ACC: 0.7415 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 2.462413 | Test ACC: 0.7592 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 1.665038 | Test ACC: 0.7413 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.121997 | Test ACC: 0.7528 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.305086 | Test ACC: 0.7344 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.719801 | Test ACC: 0.7295 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.602441 | Test ACC: 0.7534 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.898640 | Test ACC: 0.7312 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.448206 | Test ACC: 0.7418 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.071819 | Test ACC: 0.7295 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.307964 | Test ACC: 0.7484 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.129366 | Test ACC: 0.7365 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.473050 | Test ACC: 0.7300 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.934343 | Test ACC: 0.7231 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.199103 | Test ACC: 0.7438 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.701777 | Test ACC: 0.7230 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.500019 | Test ACC: 0.7320 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.401833 | Test ACC: 0.7298 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.890660 | Test ACC: 0.7341 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.743076 | Test ACC: 0.7386 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.037662 | Test ACC: 0.7191 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.465285 | Test ACC: 0.7150 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.554522 | Test ACC: 0.7149 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.474766 | Test ACC: 0.7409 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.884770 | Test ACC: 0.7084 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.876399 | Test ACC: 0.7068 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.783974 | Test ACC: 0.7836 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.789216 | Test ACC: 0.7792 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.729967 | Test ACC: 0.7791 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.791579 | Test ACC: 0.7708 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.743068 | Test ACC: 0.7685 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.630189 | Test ACC: 0.7770 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.885939 | Test ACC: 0.7557 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.889829 | Test ACC: 0.7349 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.804825 | Test ACC: 0.7454 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.883348 | Test ACC: 0.7451 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.909123 | Test ACC: 0.7433 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.880825 | Test ACC: 0.7359 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.142932 | Test ACC: 0.6519 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.222044 | Test ACC: 0.5977 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.210574 | Test ACC: 0.6066 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.083603 | Test ACC: 0.6187 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.167835 | Test ACC: 0.6344 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.210183 | Test ACC: 0.6610 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.550372 | Test ACC: 0.3792 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.348848 | Test ACC: 0.5542 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.345329 | Test ACC: 0.4850 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.410027 | Test ACC: 0.3841 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.336910 | Test ACC: 0.5540 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.523021 | Test ACC: 0.4256 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.652718 | Test ACC: 0.3254 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.579424 | Test ACC: 0.4841 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.632914 | Test ACC: 0.3666 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.505008 | Test ACC: 0.3068 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.613010 | Test ACC: 0.3004 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.730179 | Test ACC: 0.3147 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.697720 | Test ACC: 0.2680 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.650610 | Test ACC: 0.2314 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.671262 | Test ACC: 0.2586 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.627551 | Test ACC: 0.2846 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.581229 | Test ACC: 0.2949 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  128, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.771242 | Test ACC: 0.2210 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 3.097232 | Test ACC: 0.7362 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 3.665461 | Test ACC: 0.7288 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.674340 | Test ACC: 0.7437 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.850575 | Test ACC: 0.7396 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.427489 | Test ACC: 0.7435 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 2.738765 | Test ACC: 0.7327 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.617231 | Test ACC: 0.7325 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.876278 | Test ACC: 0.7318 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 3.157157 | Test ACC: 0.7333 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.633037 | Test ACC: 0.7259 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.739026 | Test ACC: 0.7128 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 2.821244 | Test ACC: 0.7375 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 3.425650 | Test ACC: 0.7435 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.309233 | Test ACC: 0.7386 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.608266 | Test ACC: 0.7268 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.938949 | Test ACC: 0.7143 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 3.486918 | Test ACC: 0.7416 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 2.669927 | Test ACC: 0.7114 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.257382 | Test ACC: 0.7054 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.658786 | Test ACC: 0.7169 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.684370 | Test ACC: 0.7219 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.911058 | Test ACC: 0.7134 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.939877 | Test ACC: 0.7089 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.869103 | Test ACC: 0.7110 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.401520 | Test ACC: 0.7060 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.912631 | Test ACC: 0.7076 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.402995 | Test ACC: 0.7270 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.196288 | Test ACC: 0.7010 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.239682 | Test ACC: 0.6972 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 2.626448 | Test ACC: 0.7263 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.585375 | Test ACC: 0.7043 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.939612 | Test ACC: 0.6998 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.323602 | Test ACC: 0.6946 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.087818 | Test ACC: 0.7189 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.460877 | Test ACC: 0.6980 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.833906 | Test ACC: 0.7064 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.911654 | Test ACC: 0.7540 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.797917 | Test ACC: 0.7605 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.748008 | Test ACC: 0.7561 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.823637 | Test ACC: 0.7552 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.930831 | Test ACC: 0.7449 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.852579 | Test ACC: 0.7578 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.187856 | Test ACC: 0.7112 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.267965 | Test ACC: 0.7060 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.228293 | Test ACC: 0.7254 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.168635 | Test ACC: 0.7206 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.222729 | Test ACC: 0.6948 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.204956 | Test ACC: 0.7234 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.526990 | Test ACC: 0.6257 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.548799 | Test ACC: 0.6350 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.519221 | Test ACC: 0.6443 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.594309 | Test ACC: 0.6015 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.551540 | Test ACC: 0.5897 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.547673 | Test ACC: 0.6216 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.736674 | Test ACC: 0.4031 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.690095 | Test ACC: 0.4408 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.755643 | Test ACC: 0.3312 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.662579 | Test ACC: 0.3974 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.681385 | Test ACC: 0.3716 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.747647 | Test ACC: 0.3889 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.807483 | Test ACC: 0.2042 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.920988 | Test ACC: 0.2742 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.941382 | Test ACC: 0.2934 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.839634 | Test ACC: 0.2779 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.865264 | Test ACC: 0.2667 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.807969 | Test ACC: 0.2014 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 2.153015 | Test ACC: 0.3901 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.906976 | Test ACC: 0.2028 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.865156 | Test ACC: 0.1993 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.925963 | Test ACC: 0.2009 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.863651 | Test ACC: 0.1990 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters:  500, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 2.150242 | Test ACC: 0.2002 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.869334 | Test ACC: 0.7546 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.386525 | Test ACC: 0.7831 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 2.383466 | Test ACC: 0.7715 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.746940 | Test ACC: 0.7635 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.434174 | Test ACC: 0.7663 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 1, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 2.616057 | Test ACC: 0.7524 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 1.844092 | Test ACC: 0.7674 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.910367 | Test ACC: 0.7648 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.924043 | Test ACC: 0.7672 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 2.492784 | Test ACC: 0.7667 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 2.428307 | Test ACC: 0.7605 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 2, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.901068 | Test ACC: 0.7557 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 2.001362 | Test ACC: 0.7562 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.754783 | Test ACC: 0.7455 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.739552 | Test ACC: 0.7557 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.618717 | Test ACC: 0.7328 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.661359 | Test ACC: 0.7532 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 3, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.972232 | Test ACC: 0.7414 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 1.970997 | Test ACC: 0.7522 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.459910 | Test ACC: 0.7463 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.221618 | Test ACC: 0.7403 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.646756 | Test ACC: 0.7438 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.806757 | Test ACC: 0.7521 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 4, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.412992 | Test ACC: 0.7363 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 0.993267 | Test ACC: 0.7122 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.645786 | Test ACC: 0.7436 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.850965 | Test ACC: 0.7311 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.951683 | Test ACC: 0.7429 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 0.999556 | Test ACC: 0.7401 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 5, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.408998 | Test ACC: 0.7396 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0       | FINAL LOSS: 1.460546 | Test ACC: 0.7222 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 1.607233 | Test ACC: 0.7380 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-07   | FINAL LOSS: 1.267219 | Test ACC: 0.7325 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-06   | FINAL LOSS: 1.248883 | Test ACC: 0.7395 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 1e-05   | FINAL LOSS: 1.232972 | Test ACC: 0.7425 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 6, Act/Init: relu/relu   , L2: 0.0001  | FINAL LOSS: 1.703285 | Test ACC: 0.7344 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.738582 | Test ACC: 0.7868 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.593197 | Test ACC: 0.7867 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.664658 | Test ACC: 0.7901 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.577096 | Test ACC: 0.7942 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.580071 | Test ACC: 0.7927 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 1, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.577606 | Test ACC: 0.7947 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 0.788377 | Test ACC: 0.7748 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.776056 | Test ACC: 0.7639 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 0.777113 | Test ACC: 0.7755 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 0.844188 | Test ACC: 0.7758 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 0.767722 | Test ACC: 0.7692 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 2, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 0.831683 | Test ACC: 0.7775 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.059578 | Test ACC: 0.6652 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 0.985449 | Test ACC: 0.6709 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.156754 | Test ACC: 0.6401 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.071539 | Test ACC: 0.7031 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.061274 | Test ACC: 0.6443 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 3, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.160120 | Test ACC: 0.6810 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.276661 | Test ACC: 0.5443 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.296029 | Test ACC: 0.5453 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.232111 | Test ACC: 0.5783 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.462322 | Test ACC: 0.4766 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.377523 | Test ACC: 0.4394 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 4, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.571135 | Test ACC: 0.3731 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.470319 | Test ACC: 0.3317 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.592259 | Test ACC: 0.2889 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.533852 | Test ACC: 0.2998 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.513279 | Test ACC: 0.3001 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.532070 | Test ACC: 0.3957 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 5, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.450797 | Test ACC: 0.3899 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0       | FINAL LOSS: 1.515212 | Test ACC: 0.2605 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-08   | FINAL LOSS: 1.628502 | Test ACC: 0.2895 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-07   | FINAL LOSS: 1.646477 | Test ACC: 0.2821 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-06   | FINAL LOSS: 1.733460 | Test ACC: 0.2059 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 1e-05   | FINAL LOSS: 1.561474 | Test ACC: 0.2971 |
+Optimizer: Adam   , LR: 0.0001 , Batch:  256, Iters: 1000, Depth: 6, Act/Init: sigmoid/sigmoid, L2: 0.0001  | FINAL LOSS: 1.550455 | Test ACC: 0.3371 |
