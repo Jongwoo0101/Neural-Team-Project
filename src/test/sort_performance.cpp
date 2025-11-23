@@ -359,5 +359,5 @@ int main()
     analyze_top_percentiles(loss_sorted_data, total_count, percentiles, "FINAL LOSS", percentiles_ofs);
 
     percentiles_ofs.close();
-    cout << "Successfully created " << percentiles_output_filename << '\n';
+    cout << "Successfully written to " << percentiles_output_filename << '\n';
 }
