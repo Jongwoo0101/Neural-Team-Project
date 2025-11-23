@@ -117,7 +117,7 @@ lrs = COMMON_HPARAMS['learning_rate']
 batch_sizes = COMMON_HPARAMS['batch_size']
 max_iters = COMMON_HPARAMS['max_iterations']
 
-# 9중 루프 시작()
+# 6중 루프 시작()
 for lr in lrs:
     for bs in batch_sizes:
         for max_i in max_iters:
