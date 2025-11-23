@@ -18,6 +18,13 @@ loss.bat
 
 3. 출력에 대한 설명
 loss_acc_log.txt 출력: 4*2*2*2*6*6=1152줄
+Optimizer: Adam
+LR: 0.1, 0.01, 0.001, 0.0001
+Batch: 128, 256
+Iters: 500, 1000
+Depth: 1, 2, 3, 4, 5, 6
+Act/Init: relu/relu, sigmoid/sigmoid
+L2: 0, 1e-08, 1e-07, 1e-06, 1e-05, 0.0001, 0
 4. 실행 위치 기반 세팅
 cd src
 cd test
