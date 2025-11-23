@@ -21,6 +21,7 @@ g++ sort_performance.cpp -o sort_performance.exe
 #include <algorithm>
 #include <limits>
 #include <iomanip>
+#include <functional>
 5. 변경 사항
 find_min_performance.cpp에서 sort_performance.cpp으로 이름이 변경되었다.
 모델이 잘 훈련되었는지에 대한 지표로써 loss와 accuracy의 사용이 확정됨에 따라 다음과 같이 변경한다.
@@ -28,16 +29,7 @@ output_log.txt에서 loss_acc_log.txt으로 이름 변경
 output.bat에서 loss.bat으로 이름 변경
 6. 수정 요구사항
 */
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <sstream>
-#include <algorithm>
-#include <iomanip>
-#include <cmath>
-#include <map>
-#include <functional>
+#include <bits/stdc++.h>
 using namespace std;
 
 // 로그 한 줄의 데이터를 저장할 구조체
