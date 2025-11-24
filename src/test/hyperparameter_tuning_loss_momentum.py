@@ -200,5 +200,5 @@ else:
 
 print(f"\n============================================================")
 print(f" Total Experiment Combinations (number of cases): {len(lrs) * len(batch_sizes) * len(max_iters) * len(activation_inits) * len(hidden_depths) * len(l2_lambdas)}")
-print(f"⏱ Total Elapsed Time (H:M:S.ms): {time_str}")
+print(f"Total Elapsed Time (H:M:S.ms): {time_str}")
 print(f"============================================================\n")
