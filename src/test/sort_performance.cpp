@@ -47,9 +47,8 @@ struct LogEntry
     string act_init;
     double l2;
 };
-
 /**
- * @brief 주어진 로그 라인에서 FINAL LOSS와 Test ACC 값을 파싱한다.
+ * @brief 주어진 로그 라인에서 FINAL LOSS와 Test ACC 값을 파싱.
  * @param line 로그 한 줄 문자열
  * @return LogEntry 구조체
  */
@@ -61,72 +60,112 @@ LogEntry parse_log_line(const string &line)
     // --- 1. 하이퍼파라미터 추출 ---
     // 파이썬 포맷: Key: Value,  또는 Key: Value
 
-    // Optimizer (Adam, AdaGrad 등)
-    size_t opt_start = line.find("Optimizer: ") + 11;
-    size_t opt_end = line.find(',', opt_start);
-    entry.optimizer = line.substr(opt_start, opt_end - opt_start);
-    entry.optimizer.erase(0, entry.optimizer.find_first_not_of(' ')); // 앞 공백 제거
-    entry.optimizer.erase(entry.optimizer.find_last_not_of(' ') + 1); // 뒤 공백 제거
+    // Helper function to extract and trim string
+    auto extract_and_trim = [&](const string &keyword, size_t &start, size_t end_char_pos) -> string
+    {
+        size_t pos = line.find(keyword);
+        if (pos == string::npos)
+            throw runtime_error("Missing keyword: " + keyword);
 
-    // LR (0.1, 0.001 등)
-    size_t lr_start = line.find("LR: ") + 4;
-    size_t lr_end = line.find(',', lr_start);
-    entry.lr = line.substr(lr_start, lr_end - lr_start);
-    entry.lr.erase(0, entry.lr.find_first_not_of(' '));
-    entry.lr.erase(entry.lr.find_last_not_of(' ') + 1);
+        start = pos + keyword.length();
+        size_t end = line.find(end_char_pos == string::npos ? ',' : '|', start);
+        if (end == string::npos)
+            end = line.length();
 
-    // Batch (128, 256 등)
-    size_t batch_start = line.find("Batch: ") + 7;
-    size_t batch_end = line.find(',', batch_start);
-    string batch_str = line.substr(batch_start, batch_end - batch_start);
-    batch_str.erase(0, batch_str.find_first_not_of(' '));
-    entry.batch = stoi(batch_str); // <--- stoi 사용
+        string value = line.substr(start, end - start);
+        value.erase(0, value.find_first_not_of(' ')); // Trim leading spaces
+        value.erase(value.find_last_not_of(' ') + 1); // Trim trailing spaces
+        return value;
+    };
 
-    // Iters (500, 1000 등)
-    size_t iters_start = line.find("Iters: ") + 7;
-    size_t iters_end = line.find(',', iters_start);
-    string iters_str = line.substr(iters_start, iters_end - iters_start);
-    iters_str.erase(0, iters_str.find_first_not_of(' '));
-    entry.iters = stoi(iters_str); // <--- stoi 사용
+    size_t start_pos;
 
-    // Depth (1, 6 등)
-    size_t depth_start = line.find("Depth: ") + 7;
-    size_t depth_end = line.find(',', depth_start);
-    string depth_str = line.substr(depth_start, depth_end - depth_start);
-    depth_str.erase(0, depth_str.find_first_not_of(' '));
-    entry.depth = stoi(depth_str); // <--- stoi 사용
+    // Optimizer
+    entry.optimizer = extract_and_trim("Optimizer: ", start_pos, string::npos);
 
-    // Act/Init (relu/relu, sigmoid/sigmoid)
-    size_t act_start = line.find("Act/Init: ") + 10;
-    size_t act_end = line.find(',', act_start);
-    entry.act_init = line.substr(act_start, act_end - act_start);
-    entry.act_init.erase(0, entry.act_init.find_first_not_of(' '));
-    entry.act_init.erase(entry.act_init.find_last_not_of(' ') + 1);
+    // LR
+    entry.lr = extract_and_trim("LR: ", start_pos, string::npos);
 
-    // L2 (0, 1e-08 등)
-    size_t l2_start = line.find("L2: ") + 4;
-    size_t l2_end = line.find('|', l2_start); // L2는 파이썬 코드에서 쉼표가 아닌 '|' 바로 앞까지 이어짐
-    string l2_str = line.substr(l2_start, l2_end - l2_start);
-    l2_str.erase(0, l2_str.find_first_not_of(' '));
-    l2_str.erase(l2_str.find_last_not_of(' ') + 1);
-    entry.l2 = stod(l2_str);
+    // Batch
+    try
+    {
+        entry.batch = stoi(extract_and_trim("Batch: ", start_pos, string::npos));
+    }
+    catch (...)
+    {
+        throw runtime_error("Failed to parse Batch value.");
+    }
+
+    // Iters
+    try
+    {
+        entry.iters = stoi(extract_and_trim("Iters: ", start_pos, string::npos));
+    }
+    catch (...)
+    {
+        throw runtime_error("Failed to parse Iters value.");
+    }
+
+    // Depth
+    try
+    {
+        entry.depth = stoi(extract_and_trim("Depth: ", start_pos, string::npos));
+    }
+    catch (...)
+    {
+        throw runtime_error("Failed to parse Depth value.");
+    }
+
+    // Act/Init
+    entry.act_init = extract_and_trim("Act/Init: ", start_pos, string::npos);
+
+    // L2 (NOTE: L2 is followed by '|')
+    try
+    {
+        entry.l2 = stod(extract_and_trim("L2: ", start_pos, '|'));
+    }
+    catch (...)
+    {
+        throw runtime_error("Failed to parse L2 value.");
+    }
 
     // --- 2. 결과 추출 ---
 
     // FINAL LOSS
-    size_t loss_pos = line.find("FINAL LOSS:") + 12;
+    size_t loss_pos = line.find("FINAL LOSS:");
+    if (loss_pos == string::npos)
+        throw runtime_error("Missing FINAL LOSS.");
+    loss_pos += 12; // Skip "FINAL LOSS: "
     size_t loss_end = line.find('|', loss_pos);
-    entry.loss = stod(line.substr(loss_pos, loss_end - loss_pos));
+    try
+    {
+        entry.loss = stod(line.substr(loss_pos, loss_end - loss_pos));
+    }
+    catch (...)
+    {
+        throw runtime_error("Failed to parse FINAL LOSS value.");
+    }
 
     // Test ACC
-    size_t acc_pos = line.find("Test ACC:") + 10;
-    size_t acc_end = line.find('|', acc_pos); // 마지막 필드이므로 '|'까지
+    size_t acc_pos = line.find("Test ACC:");
+    if (acc_pos == string::npos)
+        throw runtime_error("Missing Test ACC.");
+    acc_pos += 10;                             // Skip "Test ACC: "
+    size_t acc_end = line.find('\n', acc_pos); // May be the end of line
     if (acc_end == string::npos)
         acc_end = line.length();
-    entry.acc = stod(line.substr(acc_pos, acc_end - acc_pos));
+    try
+    {
+        entry.acc = stod(line.substr(acc_pos, acc_end - acc_pos));
+    }
+    catch (...)
+    {
+        throw runtime_error("Failed to parse Test ACC value.");
+    }
 
     return entry;
 }
+
 
 /**
  * @brief 정확도 내림차순 비교 함수
@@ -165,7 +204,7 @@ void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
     ofs << "=========================================================================" << "\n";
     // 분석 로직은 이전 코드와 동일하게 유지
     vector<pair<string, function<string(const LogEntry &)>>> hparam_getters = {
-        {"iters", [](const LogEntry &e)
+        {"Iters", [](const LogEntry &e)
          { return to_string(e.iters); }},
         {"Opt", [](const LogEntry &e)
          { return e.optimizer; }},
@@ -186,7 +225,8 @@ void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
              ss << fixed << setprecision(8) << e.l2;
              return ss.str();
          }},
-    };
+        {"Batch", [](const LogEntry &e)
+         { return to_string(e.batch); }},};
 
     map<string, map<string, vector<int>>> analysis_results;
     for (const auto &[name, getter] : hparam_getters)
@@ -321,7 +361,7 @@ int main()
             acc_ofs << entry.original_line << "\n";
         }
         acc_ofs.close();
-        cout << "Successfully created " << acc_output_filename << '\n';
+        cout << "Successfully written to " << acc_output_filename << '\n';
     }
     else
     {
@@ -337,7 +377,7 @@ int main()
             loss_ofs << entry.original_line << "\n";
         }
         loss_ofs.close();
-        cout << "Successfully created " << loss_output_filename << '\n';
+        cout << "Successfully written to " << loss_output_filename << '\n';
     }
     else
     {
