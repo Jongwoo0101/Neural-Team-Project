@@ -206,7 +206,39 @@ void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
                              const string &analysis_standard,
                              ofstream &ofs)
 {
+    // --- 1. Scientific Notation Formatting Helper ---
+    // 1e-n 형식으로 변환하고 불필요한 부호나 소수점을 제거합니다.
+    auto format_scientific = [](double value) -> string
+    {
+        // Handle L2=0 case
+        if (abs(value) < 1e-10)
+            return "0";
 
+        stringstream ss;
+        // 과학적 표기법(scientific) 사용, 정밀도 0을 주어 1.e-08 형태를 만듭니다.
+        ss << scientific << setprecision(0) << value;
+        string s = ss.str();
+
+        // '1.e' 형태의 '.' 제거 (setprecision(0) 때문에 발생할 수 있음)
+        size_t dot_pos = s.find('.');
+        if (dot_pos != string::npos && dot_pos + 1 < s.length() && s[dot_pos + 1] == 'e')
+        {
+            s.erase(dot_pos, 1);
+        }
+
+        // 지수부의 불필요한 선행 '0' 제거 (e.g., '1e-08' -> '1e-8')
+        size_t e_pos = s.find('e');
+        if (e_pos != string::npos && s.length() > e_pos + 2)
+        {
+            // e+ 또는 e- 뒤에 0이 있다면
+            char sign = s[e_pos + 1];
+            if ((sign == '+' || sign == '-') && s[e_pos + 2] == '0' && s.length() > e_pos + 3)
+            {
+                s.erase(e_pos + 2, 1); // 세 번째 문자(0) 제거
+            }
+        }
+        return s;
+    };
     // --- 헤더 출력 ---
     ofs << "=========================================================================" << "\n";
     ofs << "== Hyperparameter Occurrence Frequency Analysis (Standard: " << analysis_standard << ") ==" << "\n";
@@ -215,30 +247,33 @@ void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
     // std::pair의 첫 번째 요소는 분석 파일에 표시될 하이퍼파라미터의 이름
     // std::pair의 두 번째 요소는 하이퍼파라미터의 실제 값을 추출, 값을 추출하는 람다 함수
     vector<pair<string, function<string(const LogEntry &)>>> hparam_getters = {
-        
+
         {"Iters", [](const LogEntry &e)
          { return to_string(e.iters); }},
         {"Opt", [](const LogEntry &e)
          { return e.optimizer; }},
-        {"LR", [](const LogEntry &e)
+        {"LR", [&](const LogEntry &e)
          {
-             stringstream ss;
-             ss << fixed << setprecision(4) << stod(e.lr);
-             return ss.str();
+             try
+             {
+                 return format_scientific(stod(e.lr));
+             }
+             catch (...)
+             {
+                 return e.lr; // Parsing error, return original string
+             }
          }},
         {"Depth", [](const LogEntry &e)
          { return to_string(e.depth); }},
         {"Act/Init", [](const LogEntry &e)
          { return e.act_init; }},
-        {"L2", [](const LogEntry &e)
+        {"L2", [&](const LogEntry &e)
          {
-             stringstream ss;
-             // COMMON_HPARAMS에 1e-8, 1e-4 등이 있으므로 정밀도를 8자리로 설정
-             ss << fixed << setprecision(8) << e.l2;
-             return ss.str();
+             return format_scientific(e.l2);
          }},
         {"Batch", [](const LogEntry &e)
-         { return to_string(e.batch); }},};
+         { return to_string(e.batch); }},
+    };
 
     map<string, map<string, vector<int>>> analysis_results;
     for (const auto &[name, getter] : hparam_getters)
