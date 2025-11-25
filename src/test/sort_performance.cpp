@@ -1,4 +1,5 @@
 /*
+const string input_filename
 1. 설명
 sort_performance.cpp
 loss_acc_log.txt 파일을 읽어 FINAL ACC와 loss를 기준으로 각각 정렬한 후, 원본 로그 형식 그대로 sort_acc.txt와 sort_loss.txt 두 파일에 기록
@@ -28,6 +29,7 @@ find_min_performance.cpp에서 sort_performance.cpp으로 이름이 변경되었
 output_log.txt에서 loss_acc_log.txt으로 이름 변경
 output.bat에서 loss.bat으로 이름 변경
 6. 수정 요구사항
+
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -63,21 +65,28 @@ LogEntry parse_log_line(const string &line)
     // Helper function to extract and trim string
     auto extract_and_trim = [&](const string &keyword, size_t &start, size_t end_char_pos) -> string
     {
+        // 1. 키워드 검색: 로그 라인에서 "Optimizer: " 또는 "Batch: " 같은 키워드가 시작하는 위치
         size_t pos = line.find(keyword);
         if (pos == string::npos)
             throw runtime_error("Missing keyword: " + keyword);
-
+        
+        // 2. 값 시작 위치 설정: 키워드 길이만큼 건너뛰어 값의 시작 위치를 설정
         start = pos + keyword.length();
+
+        // 3. 값 끝 위치 설정: 다음 콤마(',') 또는 파이프('|')를 찾아 값의 끝을 결정
         size_t end = line.find(end_char_pos == string::npos ? ',' : '|', start);
         if (end == string::npos)
             end = line.length();
-
+        
+        // 4. 값 추출 및 공백 제거: 키워드와 끝 위치 사이의 문자열(값)을 추출하고 앞뒤 공백을 제거합니다.
         string value = line.substr(start, end - start);
         value.erase(0, value.find_first_not_of(' ')); // Trim leading spaces
         value.erase(value.find_last_not_of(' ') + 1); // Trim trailing spaces
         return value;
     };
 
+    // py파일의 output을 저장하는 txt에서의 왼쪽 값이 첫 번째 매개변수
+    // ex) Optimizer: Adam에서 'Optimizer:' 부분
     size_t start_pos;
 
     // Optimizer
@@ -184,7 +193,7 @@ bool compareByLoss(const LogEntry &a, const LogEntry &b)
 }
 
 /**
- * @brief 상위 N% 데이터의 하이퍼파라미터 분포를 분석하고 포맷팅.
+ * @brief 하이퍼파라미터 분석 및 보고서: 상위 N% 데이터의 하이퍼파라미터 분포를 분석하고 포맷팅.
  * @param sorted_data 분석할 데이터 (정확도 내림차순 또는 손실 오름차순)
  * @param total_count 전체 데이터 개수
  * @param percentiles 분석할 백분율 목록
@@ -203,7 +212,10 @@ void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
     ofs << "== Hyperparameter Occurrence Frequency Analysis (Standard: " << analysis_standard << ") ==" << "\n";
     ofs << "=========================================================================" << "\n";
     // 분석 로직은 이전 코드와 동일하게 유지
+    // std::pair의 첫 번째 요소는 분석 파일에 표시될 하이퍼파라미터의 이름
+    // std::pair의 두 번째 요소는 하이퍼파라미터의 실제 값을 추출, 값을 추출하는 람다 함수
     vector<pair<string, function<string(const LogEntry &)>>> hparam_getters = {
+        
         {"Iters", [](const LogEntry &e)
          { return to_string(e.iters); }},
         {"Opt", [](const LogEntry &e)
@@ -296,7 +308,7 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     // hyperparameter_tuning_loss.py의 결과
-    const string input_filename = "../loss_acc_log.txt";
+    const string input_filename = "../../target/normalization.txt";
     // test/sort_performance.cpp에서 ../log/ 디렉토리 안에 파일을 생성
     const string output_dir = "../../log/";
     const string acc_output_filename = output_dir + "sort_acc.txt";
