@@ -128,7 +128,7 @@ LogEntry parse_log_line(const string &line)
     // Act/Init
     entry.act_init = extract_and_trim("Act/Init: ", start_pos, string::npos);
 
-    // L2 (NOTE: L2 is followed by '|')
+    // L2 (참고: L2 뒤에 '|'가 온다.)
     try
     {
         entry.l2 = stod(extract_and_trim("L2: ", start_pos, '|'));
@@ -159,8 +159,8 @@ LogEntry parse_log_line(const string &line)
     size_t acc_pos = line.find("Test ACC:");
     if (acc_pos == string::npos)
         throw runtime_error("Missing Test ACC.");
-    acc_pos += 10;                             // Skip "Test ACC: "
-    size_t acc_end = line.find('\n', acc_pos); // May be the end of line
+    acc_pos += 10;                             // "Test ACC: " 넘김
+    size_t acc_end = line.find('\n', acc_pos); // 줄이 끝일 수 있으니 \n찾음
     if (acc_end == string::npos)
         acc_end = line.length();
     try
@@ -198,16 +198,17 @@ bool compareByLoss(const LogEntry &a, const LogEntry &b)
  * @param total_count 전체 데이터 개수
  * @param percentiles 분석할 백분율 목록
  * @param analysis_standard 분석 기준 (예: "Test ACC" 또는 "FINAL LOSS")
+ * @param best_value 해당 기준의 최고 성능 값 (정확도 최대값, 손실 최소값)
  * @param ofs 결과를 기록할 출력 파일 스트림
  */
 void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
                              size_t total_count,
                              const vector<int> &percentiles,
                              const string &analysis_standard,
+                             double best_value,
                              ofstream &ofs)
 {
-    // --- 1. Scientific Notation Formatting Helper ---
-    // 1e-n 형식으로 변환하고 불필요한 부호나 소수점을 제거합니다.
+    // 1e-n 형식으로 변환하고 불필요한 부호나 소수점을 제거한다.
     auto format_scientific = [](double value) -> string
     {
         // Handle L2=0 case
@@ -215,7 +216,7 @@ void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
             return "0";
 
         stringstream ss;
-        // 과학적 표기법(scientific) 사용, 정밀도 0을 주어 1.e-08 형태를 만듭니다.
+        // 과학적 표기법(scientific) 사용, 정밀도 0을 주어 1.e-08 형태를 만든다.
         ss << scientific << setprecision(0) << value;
         string s = ss.str();
 
@@ -243,6 +244,8 @@ void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
     ofs << "=========================================================================" << "\n";
     ofs << "== Hyperparameter Occurrence Frequency Analysis (Standard: " << analysis_standard << ") ==" << "\n";
     ofs << "=========================================================================" << "\n";
+    // 최고 성능 값을 출력
+    ofs << "Best " << analysis_standard << ": " << fixed << setprecision(4) << best_value << "\n";
     // 분석 로직은 이전 코드와 동일하게 유지
     // std::pair의 첫 번째 요소는 분석 파일에 표시될 하이퍼파라미터의 이름
     // std::pair의 두 번째 요소는 하이퍼파라미터의 실제 값을 추출, 값을 추출하는 람다 함수
@@ -260,7 +263,7 @@ void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
              }
              catch (...)
              {
-                 return e.lr; // Parsing error, return original string
+                 return e.lr; // 구문 분석 오류, 원래 문자열을 반환
              }
          }},
         {"Depth", [](const LogEntry &e)
@@ -318,8 +321,17 @@ void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
     {
         ofs << hparam_name << ": ";
 
-        for (const auto &[value, counts] : hparam_values)
+        // 후보 값 개수를 세기 위한 카운터
+        int item_cnt = 0;
+        // 후보 값 목록을 순회
+        for (const auto &[value, cnt] : hparam_values)
         {
+            //후보값 수가 2개 이상이면 2개씩 출력하고 줄바꿈 (첫 번째 항목은 줄바꿈 하지 않음)
+            if (item_cnt > 0 && item_cnt % 2 == 0)
+            {
+                // 줄바꿈 후 인덴테이션 (HPARAM_NAME: 뒤에 맞추기 위해 8칸 공백 사용)
+                ofs << "\n"<< "        ";
+            }
             ofs << "[" << value << ": {";
             for (size_t p_idx = 0; p_idx < percentiles.size(); ++p_idx)
             {
@@ -327,11 +339,12 @@ void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
                 int top_k = static_cast<int>(ceil(total_count * p / 100.0));
                 top_k = max(1, top_k);
 
-                double percentage = (double)counts[p_idx] / top_k * 100.0;
+                double percentage = (double)cnt[p_idx] / top_k * 100.0;
 
                 ofs << fixed << setprecision(1) << percentage << "%" << (p_idx < percentiles.size() - 1 ? ", " : "");
             }
             ofs << "}] ";
+            item_cnt++;
         }
         ofs << "\n";
     }
@@ -397,6 +410,10 @@ int main()
     vector<LogEntry> loss_sorted_data = data;
     sort(loss_sorted_data.begin(), loss_sorted_data.end(), compareByLoss);
 
+    // --- 최고 성능 값 추출 --- 0에 최고 성능 값이 있다.
+    double best_acc = acc_sorted_data[0].acc;
+    double best_loss = loss_sorted_data[0].loss;
+
     // 3. 정렬된 파일 기록 (sort_acc.txt, sort_loss.txt)
 
     // sort_acc.txt 기록
@@ -440,10 +457,12 @@ int main()
         return 1;
     }
     // 4-1. ACC 기준 분석 수행 (ACC 내림차순 데이터 사용)
-    analyze_top_percentiles(acc_sorted_data, total_count, percentiles, "Test ACC", percentiles_ofs);
+    // analyze_top_percentiles(acc_sorted_data, total_count, percentiles, "Test ACC", percentiles_ofs);
+    analyze_top_percentiles(acc_sorted_data, total_count, percentiles, "Test ACC", best_acc, percentiles_ofs);
 
     // 4-2. LOSS 기준 분석 수행 (LOSS 오름차순 데이터 사용)
-    analyze_top_percentiles(loss_sorted_data, total_count, percentiles, "FINAL LOSS", percentiles_ofs);
+    // analyze_top_percentiles(loss_sorted_data, total_count, percentiles, "FINAL LOSS", percentiles_ofs);
+    analyze_top_percentiles(loss_sorted_data, total_count, percentiles, "FINAL LOSS", best_loss, percentiles_ofs);
 
     percentiles_ofs.close();
     cout << "Successfully written to " << percentiles_output_filename << '\n';
