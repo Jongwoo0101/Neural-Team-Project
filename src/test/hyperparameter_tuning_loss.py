@@ -72,6 +72,15 @@ start_time = time.time()
 # 0-1. 데이터 읽기
 x_train, t_train = load_mnist('../data', kind='train')
 x_test, t_test = load_mnist('../data', kind='t10k')
+x_train, t_train = load_mnist('../data', kind='train')
+x_test, t_test = load_mnist('../data', kind='t10k')
+
+#=========정규화
+# 데이터를 실수형(float)으로 변환, 정규화 수행 (Normalization)
+# 각 픽셀 값을 최대값 255로 나누어 스케일을 [0.0, 1.0] 범위로 맞춘다.
+x_train = x_train.astype(np.float32) / 255.0
+x_test = x_test.astype(np.float32) / 255.0
+#=========
 train_size = x_train.shape[0]
 if t_test.ndim != 1: 
     y_true_test = np.argmax(t_test, axis=1)
@@ -103,6 +112,7 @@ MODEL_HPARAMS = {
     'weight_decay_lambda': [0, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4],
 }
 #0-4. 옵티마이저 목록 (lr은 COMMON_HPARAMS에서 가져오고, 내부 파라미터는 고정)
+# OPTIMIZERS_TO_TEST = {'Adam': Adam, 'AdaGrad': AdaGrad}
 OPTIMIZER_TO_USE = Adam # Adam이라는 클래스 자체를 저장하는 변수
 OPTIMIZER_NAME = 'Adam'
 # 0-5. 모든 조합을 생성 (product 함수 사용)
@@ -117,7 +127,10 @@ lrs = COMMON_HPARAMS['learning_rate']
 batch_sizes = COMMON_HPARAMS['batch_size']
 max_iters = COMMON_HPARAMS['max_iterations']
 
+#optimizer 종류
+# optimizers = OPTIMIZERS_TO_TEST.keys()
 # 6중 루프 시작()
+# for opt_name in optimizers:
 for lr in lrs:
     for bs in batch_sizes:
         for max_i in max_iters:
@@ -126,6 +139,7 @@ for lr in lrs:
                     for l2 in l2_lambdas:
                         # 현재 실험 파라미터 딕셔너리 생성
                         current_params = {
+                            # 'optimizer': opt_name,
                             'optimizer': OPTIMIZER_NAME,
                             'lr': lr,
                             'batch_size': bs,
@@ -151,6 +165,9 @@ for lr in lrs:
                             )
                             # Adam/AdaGrad 옵티마이저 객체 생성
                             optimizer = OPTIMIZER_TO_USE(lr=current_params['lr'])
+                            # # Adam/AdaGrad 옵티마이저 객체 생성
+                            # optimizer_class = OPTIMIZERS_TO_TEST[opt_name]
+                            # optimizer = optimizer_class(lr=current_params['lr'])
 
                             # 2.2. 훈련 루프
                             for i in range(current_params['max_iterations']):
