@@ -88,21 +88,19 @@ else:
     y_true_test = t_test
 # 0-2. 공통 하이퍼파라미터
 COMMON_HPARAMS = {
-    'learning_rate': [1e-1, 1e-2, 1e-3, 1e-4],# 일반적으로 가장 중요.
+    'learning_rate': [1e-2, 1e-3, 1e-4],# 일반적으로 가장 중요.
     'batch_size': [128, 256],# 훈련 안정성과 속도에 영향
-    'max_iterations': [500, 1000],# 충분한 수렴 시간 보장 위함
+    'max_iterations': [1000],# 충분한 수렴 시간 보장 위함
 }
 # 0-3. MultiLayerNet 모델 설정 후보
 MODEL_HPARAMS = {
     # 활성화 함수와 이에 맞는 가중치 초기화 세트> 같이 간다.
     'activation_init_sets': [
-        {'activation': 'relu', 'weight_init_std': 'relu'},       # 권장: He 초기값
-        {'activation': 'sigmoid', 'weight_init_std': 'sigmoid'}  # 권장: Xavier 초기값
+        {'activation': 'relu', 'weight_init_std': 'relu'}       # 권장: He 초기값
+        # {'activation': 'sigmoid', 'weight_init_std': 'sigmoid'}  # 권장: Xavier 초기값
     ],
     # 은닉층 구조: 층의 개수(깊이, index)만 변경 (뉴런 100개 고정)
     'hidden_size_lists': {
-        1: [100],
-        2: [100, 100],
         3: [100, 100, 100],
         4: [100, 100, 100, 100],
         5: [100, 100, 100, 100, 100],
