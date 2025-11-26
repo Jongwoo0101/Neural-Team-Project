@@ -1,7 +1,20 @@
+# IDE 및 OS 관련 파일
 .DS_Store
 Thumbs.db
-
+# Python 관련 캐시 및 컴파일 파일
 __pycache__/
 *.pyc
 *.pyo
 .idea
+
+# 테스트 관련 생성 파일
+output/
+*.exe
+
+# 실험 결과 파일 (모두 제외)
+# log folder: log/*.txt으로 loss, acc를 기준으로 분석
+# target folder: test/hyperparameter_tuning_loss.py의 output 저장
+log/
+target/
+*.txt
+
