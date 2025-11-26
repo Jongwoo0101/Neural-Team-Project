@@ -2,7 +2,8 @@
 const string input_filename
 1. 설명
 sort_performance.cpp
-loss_acc_log.txt 파일을 읽어 FINAL ACC와 loss를 기준으로 각각 정렬한 후, 원본 로그 형식 그대로 sort_acc.txt와 sort_loss.txt 두 파일에 기록
+loss_acc_log.txt 파일을 읽어 FINAL ACC와 loss를 기준으로 각각 정렬한 후, 원본 로그 형식 그대로 ../log/sort_acc.txt와 ../log/sort_loss.txt 두 파일에 기록
+또한 이 결과를 토대로 ../log/sort_percentiles.txt(상위 Top {1%, 3%, 6%, 12%} 모델에 대한 종합적인 분포 및 통계 분석을 포함)에 기록
 :cout에 대해서, 한글로 출력시 깨지는 문제가 있어 모두 영어로 구성
 2-1. 실행
 F6을 눌러도 정상 실행되도록 파일 위치를 세팅했다.
