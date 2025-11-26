@@ -25,10 +25,16 @@ g++ sort_performance.cpp -o sort_performance.exe
 #include <iomanip>
 #include <functional>
 5. 변경 사항
-find_min_performance.cpp에서 sort_performance.cpp으로 이름이 변경되었다.
+초기: Acc를 기준으로 내림차순 정렬한 결과를 sort.txt에 출력하는 코드로 구성
 모델이 잘 훈련되었는지에 대한 지표로써 loss와 accuracy의 사용이 확정됨에 따라 다음과 같이 변경한다.
-output_log.txt에서 loss_acc_log.txt으로 이름 변경
-output.bat에서 loss.bat으로 이름 변경
+-Acc와 Loss를 기준으로 내림차순 정렬한 결과를 각각 sort_acc.txt, sort_loss에 출력하는 코드로 구성
+-find_min_performance.cpp에서 sort_performance.cpp으로 이름이 변경되었다.
+sort_acc와 sort_loss에 대한 분석 지표가 필요함에 따라 sort_percentiles.txt에 이 분석표를 출력하는 형식으로 변경한다.
+-analyze_top_percentiles함수 추가
+Top {1%, 3%, 6%, 12%}로 sort_percentiles.txt에 출력하는 형식으로 변경한다.
+-analyze_top_percentiles함수 수정
+sort_percentiles.txt에 출력하는 형식에서 LR, L2를 1e-n형식으로 하이퍼파라미터 설정 후보 값을 출력하고 싶다.
+-analyze_top_percentiles함수에 format_scientific 추가
 6. 수정 요구사항
 
 */
