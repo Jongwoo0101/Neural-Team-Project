@@ -15,6 +15,7 @@
         "ios": "cpp",
         "functional": "cpp",
         "string": "cpp",
-        "stdexcept": "cpp"
+        "stdexcept": "cpp",
+        "iomanip": "cpp"
     }
 }

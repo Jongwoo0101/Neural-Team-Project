@@ -60,7 +60,7 @@ def summarize_results(params, final_loss, final_acc):
         f"Batch: {params['batch_size']:>4}, "               # 64, 128, 256... -> 4칸 확보 (오른쪽 정렬)
         f"Iters: {params['max_iterations']:>4}, "            # 500, 1000... -> 4칸 확보 (오른쪽 정렬)
         f"Depth: {len(params['hidden_size_list']):>1}, "            # 1~6... -> 1칸 확보
-        f"Act/Init: {params['activation']}/{params['weight_init_std']:<16}, "    # relu/relu, sigmoid/sigmoid -> 16칸 확보
+        f"Act/Init: {params['activation']}/{params['weight_init_std']:<7}, "    # relu/relu, sigmoid/sigmoid -> 7칸 확보
         f"L2: {params['weight_decay_lambda']:<7}"                    # 1e-08, 0 등 -> 7칸 확보
     )
     result_str = f"| FINAL LOSS: {final_loss:.6f} | Test ACC: {final_acc:.4f} |"
@@ -86,21 +86,23 @@ if t_test.ndim != 1:
     y_true_test = np.argmax(t_test, axis=1)
 else:
     y_true_test = t_test
-# 0-2. 공통 하이퍼파라미터
+# 0-2. 공통 하이퍼파라미터:
 COMMON_HPARAMS = {
-    'learning_rate': [1e-2, 1e-3, 1e-4],# 일반적으로 가장 중요.
+    'learning_rate': [1e-2, 1e-3, 1e-4],# 일반적으로 가장 중요.[1e-1,1e-2, 1e-3, 1e-4]>[1e-2, 1e-3, 1e-4]
     'batch_size': [128, 256],# 훈련 안정성과 속도에 영향
-    'max_iterations': [1000],# 충분한 수렴 시간 보장 위함
+    'max_iterations': [1000],# 충분한 수렴 시간 보장 위함[500, 1000]>[1000]
 }
 # 0-3. MultiLayerNet 모델 설정 후보
 MODEL_HPARAMS = {
     # 활성화 함수와 이에 맞는 가중치 초기화 세트> 같이 간다.
     'activation_init_sets': [
-        {'activation': 'relu', 'weight_init_std': 'relu'}       # 권장: He 초기값
-        # {'activation': 'sigmoid', 'weight_init_std': 'sigmoid'}  # 권장: Xavier 초기값
+        {'activation': 'relu', 'weight_init_std': 'relu'}        # 권장: He 초기값
+        #{'activation': 'sigmoid', 'weight_init_std': 'sigmoid'}  ## 권장: Xavier 초기값
     ],
     # 은닉층 구조: 층의 개수(깊이, index)만 변경 (뉴런 100개 고정)
     'hidden_size_lists': {
+        #1: [100],#
+        #2: [100, 100],#
         3: [100, 100, 100],
         4: [100, 100, 100, 100],
         5: [100, 100, 100, 100, 100],
