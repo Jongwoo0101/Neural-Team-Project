@@ -58,28 +58,37 @@ start_time = time.time()
 # 0-1. 데이터 읽기
 x_train, t_train = load_mnist('../data', kind='train')
 x_test, t_test = load_mnist('../data', kind='t10k')
+x_train, t_train = load_mnist('../data', kind='train')
+x_test, t_test = load_mnist('../data', kind='t10k')
+
+#=========정규화
+# 데이터를 실수형(float)으로 변환, 정규화 수행 (Normalization)
+# 각 픽셀 값을 최대값 255로 나누어 스케일을 [0.0, 1.0] 범위로 맞춘다.
+x_train = x_train.astype(np.float32) / 255.0
+x_test = x_test.astype(np.float32) / 255.0
+#=========
 train_size = x_train.shape[0]
 if t_test.ndim != 1: 
     y_true_test = np.argmax(t_test, axis=1)
 else:
     y_true_test = t_test
-# 0-2. 공통 하이퍼파라미터
+# 0-2. 공통 하이퍼파라미터:
 COMMON_HPARAMS = {
-    'learning_rate': [1e-1, 1e-2, 1e-3, 1e-4],# 일반적으로 가장 중요.
+    'learning_rate': [1e-2, 1e-3, 1e-4],# 일반적으로 가장 중요.[1e-1,1e-2, 1e-3, 1e-4]>[1e-2, 1e-3, 1e-4]
     'batch_size': [128, 256],# 훈련 안정성과 속도에 영향
-    'max_iterations': [500, 1000],# 충분한 수렴 시간 보장 위함
+    'max_iterations': [1000],# 충분한 수렴 시간 보장 위함[500, 1000]>[1000]
 }
 # 0-3. MultiLayerNet 모델 설정 후보
 MODEL_HPARAMS = {
     # 활성화 함수와 이에 맞는 가중치 초기화 세트> 같이 간다.
     'activation_init_sets': [
-        {'activation': 'relu', 'weight_init_std': 'relu'},       # 권장: He 초기값
-        {'activation': 'sigmoid', 'weight_init_std': 'sigmoid'}  # 권장: Xavier 초기값
+        {'activation': 'relu', 'weight_init_std': 'relu'}        # 권장: He 초기값
+        #{'activation': 'sigmoid', 'weight_init_std': 'sigmoid'}  ## 권장: Xavier 초기값
     ],
     # 은닉층 구조: 층의 개수(깊이, index)만 변경 (뉴런 100개 고정)
     'hidden_size_lists': {
-        1: [100],
-        2: [100, 100],
+        #1: [100],#
+        #2: [100, 100],#
         3: [100, 100, 100],
         4: [100, 100, 100, 100],
         5: [100, 100, 100, 100, 100],
@@ -89,6 +98,7 @@ MODEL_HPARAMS = {
     'weight_decay_lambda': [0, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4],
 }
 #0-4. 옵티마이저 목록 (lr은 COMMON_HPARAMS에서 가져오고, 내부 파라미터는 고정)
+# OPTIMIZERS_TO_TEST = {'Adam': Adam, 'AdaGrad': AdaGrad}
 OPTIMIZER_TO_USE = Adam # Adam이라는 클래스 자체를 저장하는 변수
 OPTIMIZER_NAME = 'Adam'
 # 0-5. 모든 조합을 생성 (product 함수 사용)
@@ -103,7 +113,10 @@ lrs = COMMON_HPARAMS['learning_rate']
 batch_sizes = COMMON_HPARAMS['batch_size']
 max_iters = COMMON_HPARAMS['max_iterations']
 
-# 9중 루프 시작()
+#optimizer 종류
+# optimizers = OPTIMIZERS_TO_TEST.keys()
+# 6중 루프 시작()
+# for opt_name in optimizers:
 for lr in lrs:
     for bs in batch_sizes:
         for max_i in max_iters:
@@ -112,6 +125,7 @@ for lr in lrs:
                     for l2 in l2_lambdas:
                         # 현재 실험 파라미터 딕셔너리 생성
                         current_params = {
+                            # 'optimizer': opt_name,
                             'optimizer': OPTIMIZER_NAME,
                             'lr': lr,
                             'batch_size': bs,
@@ -137,6 +151,9 @@ for lr in lrs:
                             )
                             # Adam/AdaGrad 옵티마이저 객체 생성
                             optimizer = OPTIMIZER_TO_USE(lr=current_params['lr'])
+                            # # Adam/AdaGrad 옵티마이저 객체 생성
+                            # optimizer_class = OPTIMIZERS_TO_TEST[opt_name]
+                            # optimizer = optimizer_class(lr=current_params['lr'])
 
                             # 2.2. 훈련 루프
                             for i in range(current_params['max_iterations']):
@@ -184,5 +201,5 @@ else:
 
 print(f"\n============================================================")
 print(f" Total Experiment Combinations (number of cases): {len(lrs) * len(batch_sizes) * len(max_iters) * len(activation_inits) * len(hidden_depths) * len(l2_lambdas)}")
-print(f"⏱ Total Elapsed Time (H:M:S.ms): {time_str}")
+print(f"Total Elapsed Time (H:M:S.ms): {time_str}")
 print(f"============================================================\n")
