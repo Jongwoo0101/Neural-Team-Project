@@ -245,7 +245,7 @@ void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
     ofs << "== Hyperparameter Occurrence Frequency Analysis (Standard: " << analysis_standard << ") ==" << "\n";
     ofs << "=========================================================================" << "\n";
     // 최고 성능 값을 출력
-    ofs << "Best " << analysis_standard << ": " << fixed << setprecision(4) << best_value << "\n";
+    ofs << "Best model" << analysis_standard << ": " << fixed << setprecision(4) << best_value << "\n\n";
     // 분석 로직은 이전 코드와 동일하게 유지
     // std::pair의 첫 번째 요소는 분석 파일에 표시될 하이퍼파라미터의 이름
     // std::pair의 두 번째 요소는 하이퍼파라미터의 실제 값을 추출, 값을 추출하는 람다 함수
@@ -356,7 +356,7 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     // hyperparameter_tuning_loss.py의 결과
-    const string input_filename = "../../target/normalization.txt";
+    const string input_filename = "../../target/loss_acc_adam.txt";
     // test/sort_performance.cpp에서 ../log/ 디렉토리 안에 파일을 생성
     const string output_dir = "../../log/";
     const string acc_output_filename = output_dir + "sort_acc.txt";
@@ -449,7 +449,7 @@ int main()
     }
 
     // 4. 백분율 분석 및 기록 (sort_percentiles.txt)
-    // ofstream을 열 때 std::ios::out 플래그가 기본값이므로 파일이 새로 생성되거나 덮어쓰기 됩니다.
+    // ofstream을 열 때 std::ios::out 플래그가 기본값이므로 파일이 새로 생성되거나 덮어쓰기 된다.
     ofstream percentiles_ofs(percentiles_output_filename);
     if (!percentiles_ofs.is_open())
     {
