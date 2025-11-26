@@ -1,2 +1,4 @@
-@REM output_log.txt에서 normalization.txt으로 변경
-python hyperparameter_tuning_loss.py > normalization.txt
+@REM output_log.txt에서 ..\target\normalization.txt으로 변경
+@REM 출력을 리다이렉션할 때 파일이 없다면 자동으로 생성한다.
+@REM 출력 경로를 src\target 폴더로 변경시에 ..\target\name.txt으로 변경
+python hyperparameter_tuning_loss.py > ..\target\normalization.txt
