@@ -8,7 +8,6 @@ __pycache__/
 .idea
 
 # 테스트 관련 생성 파일
-output/
 *.exe
 
 # 실험 결과 파일 (모두 제외)
