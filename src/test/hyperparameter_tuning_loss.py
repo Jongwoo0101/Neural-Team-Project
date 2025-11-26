@@ -49,23 +49,9 @@ import numpy as np
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from models.multi_layer_net import MultiLayerNet
 from common.optimizer import *
+from common.functions import summarize_results
 from data.mnist_reader import load_mnist
-def summarize_results(params, final_loss, final_acc):
-    """실험 결과를 깔끔하게 정렬된 텍스트 줄로 요약하여 출력한다."""
-    # 필드 너비를 지정하여 문자열을 포매팅 (VS Code 고정폭 폰트 전제)
-    # 예시:<7 -> 7칸 왼쪽 정렬, :>4 -> 4칸 오른쪽 정렬
-    setting_str = (
-        f"Optimizer: {params['optimizer']:<7}, "          # Adam,AdaGrad -> 7칸 확보
-        f"LR: {params['lr']:<7}, "                  # 0.1,0.001... -> 7칸 확보
-        f"Batch: {params['batch_size']:>4}, "               # 64, 128, 256... -> 4칸 확보 (오른쪽 정렬)
-        f"Iters: {params['max_iterations']:>4}, "            # 500, 1000... -> 4칸 확보 (오른쪽 정렬)
-        f"Depth: {len(params['hidden_size_list']):>1}, "            # 1~6... -> 1칸 확보
-        f"Act/Init: {params['activation']}/{params['weight_init_std']:<7}, "    # relu/relu, sigmoid/sigmoid -> 7칸 확보
-        f"L2: {params['weight_decay_lambda']:<7}"                    # 1e-08, 0 등 -> 7칸 확보
-    )
-    result_str = f"| FINAL LOSS: {final_loss:.6f} | Test ACC: {final_acc:.4f} |"
 
-    print(f"{setting_str} {result_str}")
 
 start_time = time.time()
 # 0. MNIST 데이터 읽기 및 실험 설정 후보 값 정의==========
