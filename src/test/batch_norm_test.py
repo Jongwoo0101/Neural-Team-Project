@@ -18,7 +18,10 @@ max_epochs = 20
 train_size = x_train.shape[0]
 batch_size = 100
 learning_rate = 0.01
-
+# 드롭아웃 사용 유무와 비율 설정 ========================
+use_dropout = True  # 드롭아웃을 쓰지 않을 때는 False
+dropout_ratio = 0.2
+# ====================================================
 
 def __train(weight_init_std):
     bn_network = MultiLayerNetExtend(input_size=784, hidden_size_list=[100, 100, 100, 100, 100], output_size=10, 
