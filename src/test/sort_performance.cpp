@@ -25,7 +25,7 @@ g++ sort_performance.cpp -o sort_performance.exe
 #include <iomanip>
 #include <functional>
 5. 변경 사항
-초기: Acc를 기준으로 내림차순 정렬한 결과를 sort.txt에 출력하는 코드로 구성
+초기: Acc를 기준으로 내림차순 정렬한 결과(log.txt)를 sort.txt에 출력하는 코드로 구성
 모델이 잘 훈련되었는지에 대한 지표로써 loss와 accuracy의 사용이 확정됨에 따라 다음과 같이 변경한다.
 -Acc와 Loss를 기준으로 내림차순 정렬한 결과를 각각 sort_acc.txt, sort_loss에 출력하는 코드로 구성
 -find_min_performance.cpp에서 sort_performance.cpp으로 이름이 변경되었다.
