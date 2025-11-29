@@ -2,12 +2,12 @@
 
 import numpy as np
 import sys, os
+from collections import OrderedDict
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from common.layers import *
 from common.gradient import numerical_gradient
-from collections import OrderedDict
 
 class TwoLayerNet:
     def __init__(self, input_size, hidden_size, output_size, weight_init_std=0.01):
