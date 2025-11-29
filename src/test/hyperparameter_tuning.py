@@ -219,6 +219,6 @@ else:
     time_str += '.000' # 소수점이 없는 경우 추가
 
 print(f"\n============================================================")
-print(f" Total Experiment Combinations (number of cases): {len(lrs) * len(batch_sizes) * len(max_iters) * len(activation_inits) * len(hidden_depths) * len(l2_lambdas)}")
+print(f" Total Experiment Combinations (number of cases): {total_combinations}")
 print(f"Total Elapsed Time (H:M:S.ms): {time_str}")
 print(f"============================================================\n")
