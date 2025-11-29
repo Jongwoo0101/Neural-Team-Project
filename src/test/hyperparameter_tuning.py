@@ -88,7 +88,7 @@ MODEL_HPARAMS = {
     # 활성화 함수와 이에 맞는 가중치 초기화 세트> 같이 간다.
     'activation_init_sets': [
         {'activation': 'relu', 'weight_init_std': 'relu'}        # 권장: He 초기값
-        #{'activation': 'sigmoid', 'weight_init_std': 'sigmoid'}  ## 권장: Xavier 초기값
+        # {'activation': 'sigmoid', 'weight_init_std': 'sigmoid'}  ## 권장: Xavier 초기값
     ],
     # 은닉층 구조: 층의 개수(깊이, index)만 변경 (뉴런 100개 고정)
     'hidden_size_lists': {
