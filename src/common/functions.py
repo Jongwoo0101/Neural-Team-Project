@@ -41,8 +41,9 @@ def summarize_results(params, final_loss, final_acc):
     # 예시:<7 -> 7칸 왼쪽 정렬, :>4 -> 4칸 오른쪽 정렬
 
     #hyperparameter_tuning.py의 output를 출력하기 위한 파일 경로
-    file_path = "../target/ex.txt"
-    with open(file_path, 'w', encoding='utf-8') as f:
+    file_path = "../target/dropout_batchnorm.txt"
+    # 실험 반복시 매번 file_path을 열기에 w가 아닌 a로 열어야 내용이 누적된다.
+    with open(file_path, 'a', encoding='utf-8') as f:
         # 배치 정규화(BN)/Dropout 플래그를 Yes/No 문자열로 변환 (출력 간결화)
         bn_status = 'T' if params.get('use_batchnorm') else 'F'
         drop_status = 'T' if params['dropout_ration'] > 0 else 'F'
@@ -60,5 +61,5 @@ def summarize_results(params, final_loss, final_acc):
             f"Drop R: {params['dropout_ration']:<5.1f} "                  # Dropout Ratio (0.0 ~ 0.6) -> 5칸 확보, 소수점 첫째 자리까지
         )
         result_str = f"| FINAL LOSS: {final_loss:.6f} | Test ACC: {final_acc:.4f} |"
-
+        # print(f"{setting_str} {result_str}")
         f.write(f"{setting_str} {result_str}\n")
