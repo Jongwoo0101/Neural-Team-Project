@@ -81,7 +81,8 @@ else:
 COMMON_HPARAMS = {
     'learning_rate': [1e-2, 1e-3, 1e-4],# 일반적으로 가장 중요.[1e-1,1e-2, 1e-3, 1e-4]>[1e-2, 1e-3, 1e-4]
     'batch_size': [128, 256],# 훈련 안정성과 속도에 영향
-    'max_iterations': [1000],# 충분한 수렴 시간 보장 위함[500, 1000]>[1000]
+    #'max_iterations': [1000],# 충분한 수렴 시간 보장 위함[500, 1000]>[1000]
+    'max_epochs': [10, 20], # 에폭 기준을 추가
 }
 # 0-3. MultiLayerNetExtend 모델 설정 후보
 MODEL_HPARAMS = {
@@ -123,8 +124,8 @@ l2_lambdas = MODEL_HPARAMS['weight_decay_lambda']
 # COMMON HPARAMS
 lrs = COMMON_HPARAMS['learning_rate']
 batch_sizes = COMMON_HPARAMS['batch_size']
-max_iters = COMMON_HPARAMS['max_iterations']
-
+# max_iters = COMMON_HPARAMS['max_iterations']
+max_expochs=COMMON_HPARAMS['max_epochs']
 # 조건부/정규화 HPARAMS 리스트
 use_bns = MODEL_HPARAMS['use_batchnorm']
 # use_drops = MODEL_HPARAMS['use_dropout']
@@ -132,22 +133,25 @@ drop_ratios = MODEL_HPARAMS['dropout_rations']
 
 # 1. 모든 하이퍼파라미터 조합 생성
 all_combinations = product(
-    lrs, batch_sizes, max_iters, activation_inits, 
+    lrs, batch_sizes, max_expochs, activation_inits, 
     hidden_depths, l2_lambdas, use_bns, drop_ratios
 )
 # 총 조합 수 계산 (결과 출력용)
-total_combinations = len(lrs) * len(batch_sizes) * len(max_iters) * len(activation_inits) * \
+total_combinations = len(lrs) * len(batch_sizes) * len(max_expochs) * len(activation_inits) * \
                      len(hidden_depths) * len(l2_lambdas) * len(use_bns) * len(drop_ratios)
-
 # 2. 조합 순회 시작
-for lr, bs, max_i, act_init, depth, l2, use_bn, drop_r in all_combinations:
+for lr, bs, max_e, act_init, depth, l2, use_bn, drop_r in all_combinations:
 
+    # 훈련에 필요한 반복 횟수 계산
+    iter_per_epoch = max(train_size // bs, 1)
+    max_i = max_e * iter_per_epoch # <---- 계산된 Max Iterations
     # 2-1. 현재 실험 파라미터 딕셔너리 생성
     current_params = {
         'optimizer': OPTIMIZER_NAME,
         'lr': lr,
         'batch_size': bs,
-        'max_iterations': max_i,
+        'max_epochs': max_e,
+        'max_iterations': max_i, # 계산된 Iterations 정보 저장 (출력/2-2.2용)
         'hidden_size_list': MODEL_HPARAMS['hidden_size_lists'][depth],
         'activation': act_init['activation'],
         'weight_init_std': act_init['weight_init_std'],

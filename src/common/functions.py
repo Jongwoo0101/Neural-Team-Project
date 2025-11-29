@@ -50,6 +50,7 @@ def summarize_results(params, final_loss, final_acc):
             f"Optimizer: {params['optimizer']:<7}, "          # Adam,AdaGrad -> 7칸 확보
             f"LR: {params['lr']:<7}, "                  # 0.1,0.001... -> 7칸 확보
             f"Batch: {params['batch_size']:>4}, "               # 64, 128, 256... -> 4칸 확보 (오른쪽 정렬)
+            f"Epochs: {params['max_epochs']:>3}, "          # Epochs 항목 추가
             f"Iters: {params['max_iterations']:>4}, "            # 500, 1000... -> 4칸 확보 (오른쪽 정렬)
             f"Depth: {len(params['hidden_size_list']):>1}, "            # 1~6... -> 1칸 확보
             f"Act/Init: {params['activation']}/{params['weight_init_std']:<5}, "    # relu/relu, sigmoid/sigmoid -> 8칸 확보|relu/relu만 있을땐 5칸
