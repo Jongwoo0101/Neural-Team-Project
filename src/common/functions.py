@@ -60,4 +60,4 @@ def summarize_results(params, final_loss, final_acc):
         )
         result_str = f"| FINAL LOSS: {final_loss:.6f} | Test ACC: {final_acc:.4f} |"
 
-        f.write(f"{setting_str} {result_str}")
+        f.write(f"{setting_str} {result_str}\n")
