@@ -1,17 +1,6 @@
 """
 1. accuracy_comparison.py와 달라짐 점
 바꿔야하는 하이퍼 파라미터를 자동으로 변경 및 학습(GridSearch)
-초기 버전(이 파일)과 달라진 점
--지표를 acc뿐만 아니라 loss를 사용한다.
--summarize_results에서 Act와 Init를 따로 파일 출력했는데, Act/Init으로 통합했다.
--summarize_results에서 시각적 정렬을 위해 f-string 포매팅을 적용했다.(변경을 대비하기 위해 넉넉하게 잡음)
---ex) 기존엔 LR: 0.01와 LR: 0.0001의 경우 밀리기에 필드 너비를 고정하는 f-string 포매팅 적용했다.
--h)batch_size: 32, 64, 128, 256에서 64, 128, 256으로 변경
--h)max_iterations: 500, 1000, 4000, 5000에서 500, 1000으로 변경
---일반 컴퓨터 환경에서 h)의 두 가지 사항을 이전 코드로 수행시에 2*4*5*5*2*6*6=14,400의 경우의 수이고 max_iterations가 4000,5000이 있기에 loss계산을 안해도 40-240시간이 걸릴 수 있다.
---이를 돌리기 위해선 딥러닝 라이브러리가 GPU 가속을 지원해야하기에 TensorFlow/PyTorch를 사용해야한다. TensorFlow로 테스트시에 common.optimizer의 optimizer을 쓸 경우 GPU를 쓰지 못하였다.
-hyperparameter_tuning_loss.py에서 hyperparameter_tuning.py으로 이름을 바꾸었다.
--acc만 사용했던 것과 다르게 loss도 기준을 세워서 뒤에_loss를 붙였지만 이후 과정을 위해 생략한다.
 2. 실행
 이 코드는 실행시에 output이 길기에 결과를 txt파일에 표시한다.
 이를 위해 src/test>위치에서 loss.bat으로 실행한다.
@@ -44,6 +33,16 @@ batch_size: 128, 256으로 변경
 Depth: 높을수록 좀 더 잘 나오는 경향 있지만 그대로
 L2: 굉장히 soft, 그대로
 
+6. 변경사항
+-summarize_results에서 Act와 Init를 따로 파일 출력했는데, Act/Init으로 통합했다.
+-summarize_results에서 시각적 정렬을 위해 f-string 포매팅을 적용했다.(변경을 대비하기 위해 넉넉하게 잡음)
+--ex) 기존엔 LR: 0.01와 LR: 0.0001의 경우 밀리기에 필드 너비를 고정하는 f-string 포매팅 적용했다.
+-h)batch_size: 32, 64, 128, 256에서 64, 128, 256으로 변경
+-h)max_iterations: 500, 1000, 4000, 5000에서 500, 1000으로 변경
+--일반 컴퓨터 환경에서 h)의 두 가지 사항을 이전 코드로 수행시에 2*4*5*5*2*6*6=14,400의 경우의 수이고 max_iterations가 4000,5000이 있기에 loss계산을 안해도 40-240시간이 걸릴 수 있다.
+--이를 돌리기 위해선 딥러닝 라이브러리가 GPU 가속을 지원해야하기에 TensorFlow/PyTorch를 사용해야한다. TensorFlow로 테스트시에 common.optimizer의 optimizer을 쓸 경우 GPU를 쓰지 못하였다.
+hyperparameter_tuning_loss.py에서 hyperparameter_tuning.py으로 이름을 바꾸었다.
+-acc만 사용했던 것과 다르게 loss도 기준을 세워서 뒤에_loss를 붙였지만 이후 과정을 위해 생략한다.
 """
 import sys, os, time
 from datetime import timedelta#시간 차이를 포맷하기 위해
