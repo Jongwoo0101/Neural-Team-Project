@@ -10,10 +10,12 @@
 -h)max_iterations: 500, 1000, 4000, 5000에서 500, 1000으로 변경
 --일반 컴퓨터 환경에서 h)의 두 가지 사항을 이전 코드로 수행시에 2*4*5*5*2*6*6=14,400의 경우의 수이고 max_iterations가 4000,5000이 있기에 loss계산을 안해도 40-240시간이 걸릴 수 있다.
 --이를 돌리기 위해선 딥러닝 라이브러리가 GPU 가속을 지원해야하기에 TensorFlow/PyTorch를 사용해야한다. TensorFlow로 테스트시에 common.optimizer의 optimizer을 쓸 경우 GPU를 쓰지 못하였다.
+hyperparameter_tuning_loss.py에서 hyperparameter_tuning.py으로 이름을 바꾸었다.
+-acc만 사용했던 것과 다르게 loss도 기준을 세워서 뒤에_loss를 붙였지만 이후 과정을 위해 생략한다.
 2. 실행
 이 코드는 실행시에 output이 길기에 결과를 txt파일에 표시한다.
 이를 위해 src/test>위치에서 loss.bat으로 실행한다.
-(기존엔 python hyperparameter_tuning_loss.py으로 실행)
+(cmd창에 출력을 원할 경우 python hyperparameter_tuning.py으로 실행)
 loss.bat
 
 3. 출력에 대한 설명
@@ -28,7 +30,7 @@ L2: 0, 1e-08, 1e-07, 1e-06, 1e-05, 0.0001, 0
 4. 실행 위치 기반 세팅
 cd src
 cd test
-python hyperparameter_tuning_loss.py
+python hyperparameter_tuning.py
 loss.bat
 
 5. 하이퍼파라미터 결과
