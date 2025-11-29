@@ -55,6 +55,10 @@ struct LogEntry
     int depth;
     string act_init;
     double l2;
+
+    string bn_status;   // BN: T/F
+    string drop_status; // Drop: T/F
+    double drop_ratio;  // Drop R: 0.0 ~ 0.6
 };
 /**
  * @brief 주어진 로그 라인에서 FINAL LOSS와 Test ACC 값을 파싱.
@@ -135,14 +139,32 @@ LogEntry parse_log_line(const string &line)
     // Act/Init
     entry.act_init = extract_and_trim("Act/Init: ", start_pos, string::npos);
 
-    // L2 (참고: L2 뒤에 '|'가 온다.)
+    // L2
     try
     {
-        entry.l2 = stod(extract_and_trim("L2: ", start_pos, '|'));
+        // 배치정규화,Dropout 추가됨에 따라 L2: 뒤에는 '|' 대신 ','가 온다.
+        // string::npos는 ',' 또는 '|' 중 먼저 오는 것을 찾음
+        entry.l2 = stod(extract_and_trim("L2: ", start_pos, string::npos)); 
     }
     catch (...)
     {
         throw runtime_error("Failed to parse L2 value.");
+    }
+    // BN (T/F)
+    entry.bn_status = extract_and_trim("BN: ", start_pos, string::npos);
+
+    // Drop (T/F)
+    entry.drop_status = extract_and_trim("Drop: ", start_pos, string::npos);
+
+    // Drop R (참고: Drop R 뒤에 '|'가 온다.)
+    try
+    {
+        // Drop R: 뒤에는 '|'가 와야 한다.
+        entry.drop_ratio = stod(extract_and_trim("Drop R: ", start_pos, '|'));
+    }
+    catch (...)
+    {
+        throw runtime_error("Failed to parse Drop R value.");
     }
 
     // --- 2. 결과 추출 ---
@@ -283,6 +305,17 @@ void analyze_top_percentiles(const vector<LogEntry> &sorted_data,
          }},
         {"Batch", [](const LogEntry &e)
          { return to_string(e.batch); }},
+        {"BN", [](const LogEntry &e)
+         { return e.bn_status; }},
+        {"Drop", [](const LogEntry &e)
+         { return e.drop_status; }},
+        {"Drop R", [&](const LogEntry &e)
+         {
+             // 0.0, 0.1 형태로 출력하기 위해 stringstream 사용
+             stringstream ss;
+             ss << fixed << setprecision(1) << e.drop_ratio;
+             return ss.str();
+         }},
     };
 
     map<string, map<string, vector<int>>> analysis_results;
