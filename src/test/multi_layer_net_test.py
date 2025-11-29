@@ -5,6 +5,7 @@ python multi_layer_net_test.py
 """
 import sys, os
 import matplotlib.pyplot as plt
+
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from common.util import smooth_curve

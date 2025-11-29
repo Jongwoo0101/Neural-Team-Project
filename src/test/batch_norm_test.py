@@ -1,85 +1,93 @@
-# coding: utf-8
 import sys, os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-
 import numpy as np
 import matplotlib.pyplot as plt
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 from data.mnist_reader import load_mnist
-from common.multi_layer_net_extend import MultiLayerNetExtend
-from common.optimizer import SGD, Adam
+from models.multi_layer_net_extend import MultiLayerNetExtend
+from common.optimizer import SGD
 
-(x_train, t_train), (x_test, t_test) = load_mnist(normalize=True)
+# 0. MNIST 데이터 읽기
+x_train, t_train = load_mnist('../data', kind='train')
+x_test, t_test = load_mnist('../data', kind='t10k')
 
-# 학습 데이터를 줄임
+# 샘플 수 축소
 x_train = x_train[:1000]
 t_train = t_train[:1000]
 
+# 학습 설정
 max_epochs = 20
 train_size = x_train.shape[0]
 batch_size = 100
 learning_rate = 0.01
 
-# 드롭아웃 사용 유무와 비율 설정 ========================
-use_dropout = True  # 드롭아웃을 쓰지 않을 때는 False
-dropout_ratio = 0.2
-# ====================================================
+# 드롭아웃 옵션
+default_dropout_ratio = 0.2
 
-def __train(use_dropout_flag, dropout_ratio_val):
+
+# 1. 학습 함수
+def train(use_dropout_flag, dropout_ratio_val):
+    """BatchNorm 포함한 MLP 학습 후 정확도 리스트 반환"""
+
     network = MultiLayerNetExtend(
-        input_size=784, 
-        hidden_size_list=[100, 100, 100, 100, 100], 
-        output_size=10, 
-        weight_init_std='relu', 
-        use_batchnorm=True,  # 배치 정규화는 항상 사용
-        use_dropout=use_dropout_flag, # 드롭아웃 사용 여부
-        dropout_ration=dropout_ratio_val # 드롭아웃 비율
+        input_size=784,
+        hidden_size_list=[100, 100, 100, 100, 100],
+        output_size=10,
+        weight_init_std='relu',
+        use_batchnorm=True,
+        use_dropout=use_dropout_flag,
+        dropout_ratio=dropout_ratio_val  # 오타 수정됨
     )
+
     optimizer = SGD(lr=learning_rate)
     train_acc_list = []
-    iter_per_epoch = max(train_size / batch_size, 1)
+
+    iter_per_epoch = max(train_size // batch_size, 1)
     epoch_cnt = 0
-    
+
     for i in range(1000000000):
         batch_mask = np.random.choice(train_size, batch_size)
         x_batch = x_train[batch_mask]
         t_batch = t_train[batch_mask]
-    
-        # 학습
+
+        # 파라미터 업데이트
         grads = network.gradient(x_batch, t_batch)
         optimizer.update(network.params, grads)
-    
+
+        # 에폭마다 정확도 계산
         if i % iter_per_epoch == 0:
-            #정확도 측정
             train_acc = network.accuracy(x_train, t_train)
             train_acc_list.append(train_acc)
 
-            print(f"epoch:{epoch_cnt} | use_dropout={use_dropout_flag}, Acc={train_acc:.4f}")
-    
+            print(f"epoch {epoch_cnt:02d} | dropout={use_dropout_flag} | acc={train_acc:.4f}")
+
             epoch_cnt += 1
             if epoch_cnt >= max_epochs:
                 break
-                
+
     return train_acc_list
 
 
-# 그래프 그리기==========
+# 2. 두 조건 비교 학습 실행
 x = np.arange(max_epochs)
 
-# 1. 드롭아웃 미사용 (Batch Norm ON, Dropout OFF)
-acc_no_dropout = __train(use_dropout_flag=False, dropout_ratio_val=0.5)
+print("\n=== 1) BatchNorm ON + Dropout OFF ===")
+acc_no_dropout = train(use_dropout_flag=False, dropout_ratio_val=0.0)
 
-# 2. 드롭아웃 사용 (Batch Norm ON, Dropout ON)
-acc_with_dropout = __train(use_dropout_flag=True, dropout_ratio_val=0.2) # 드롭아웃 비율은 0.2 사용
-    
-# 그래프 그리기==========
-plt.title("Training Accuracy (Batch Normalization ON)")
-plt.plot(x, acc_with_dropout, label=f'BN ON + Dropout ON (p=0.2)', markevery=2)
-plt.plot(x, acc_no_dropout, linestyle = "--", label='BN ON + Dropout OFF', markevery=2)
+print("\n=== 2) BatchNorm ON + Dropout ON (0.2) ===")
+acc_with_dropout = train(use_dropout_flag=True, dropout_ratio_val=default_dropout_ratio)
+
+
+# 3. 그래프
+plt.title("Training Accuracy (BatchNorm ON)")
+plt.plot(x, acc_with_dropout, label='BN ON + Dropout ON (p=0.2)', markevery=2)
+plt.plot(x, acc_no_dropout, linestyle='--', label='BN ON + Dropout OFF', markevery=2)
 
 plt.ylim(0, 1.0)
 plt.xlim(0, max_epochs)
-plt.ylabel("accuracy")
-plt.xlabel("epochs")
+plt.xlabel("Epochs")
+plt.ylabel("Accuracy")
 plt.legend(loc='lower right')
-    
+
 plt.show()

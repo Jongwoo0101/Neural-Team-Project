@@ -46,7 +46,9 @@ L2: 굉장히 soft, 그대로
 import sys, os, time
 from datetime import timedelta#시간 차이를 포맷하기 위해
 import numpy as np
+
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 from models.multi_layer_net import MultiLayerNet
 from common.optimizer import *
 from common.functions import summarize_results
