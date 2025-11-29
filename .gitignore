@@ -10,11 +10,7 @@ __pycache__/
 # 테스트 관련 생성 파일
 *.exe
 
-# log 폴더 안의 모든 txt 파일 제외
-log/*.txt
-
-# target 폴더 안의 모든 txt 파일 제외
-target/*.txt
-
+# # target와 log 폴더 안의 모든 txt 파일 제외
+*.txt
 # (주의) requirements.txt는 포함해야 하므로 ignore 금지!
 !requirements.txt
