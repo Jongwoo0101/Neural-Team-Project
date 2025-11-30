@@ -1,147 +1,88 @@
 import os
-import re
-import math
-from typing import List, Dict
+import pandas as pd
 
-# 보조 함수: 과학적 표기(1e-08 등)를 안전하게 float으로 변환
-def parse_float(x: str):
-    try:
-        return float(x)
-    except:
-        # 혹시 모를 예외 대응
-        return float(f"{x}")
+NUMERIC_COLS = [
+    "lr", "batch_size", "max_iterations", "max_epochs",
+    "weight_decay_lambda", "dropout_ration",
+    "final_loss", "final_acc"
+]
 
-# 로그 한 줄을 파싱하는 함수
-# loss_acc_log.txt의 각 라인에서 하이퍼파라미터, Loss, ACC를 추출한다.
-def parse_log_line(line: str) -> Dict:
-    """
-    예시 입력:
-
-    Optimizer: Adam   , LR: 0.1    , Batch:  128, Iters:  500, Depth: 1,
-    Act/Init: relu/relu   , L2: 1e-08   | FINAL LOSS: 2.186918 | Test ACC: 0.1542 |
-    """
-
-    # 하이퍼파라미터 정보 정규식 패턴
-    pattern_hp = (
-        r"Optimizer:\s*([A-Za-z0-9_]+)\s*,\s*"
-        r"LR:\s*([0-9.eE+-]+)\s*,\s*"
-        r"Batch:\s*([0-9]+)\s*,\s*"
-        r"Iters:\s*([0-9]+)\s*,\s*"
-        r"Depth:\s*([0-9]+)\s*,\s*"
-        r"Act/Init:\s*([A-Za-z0-9_/]+)\s*,\s*"
-        r"L2:\s*([0-9.eE+-]+)"
-    )
-    match_hp = re.search(pattern_hp, line)
-
-    # 정상적으로 매칭되지 않는 경우는 무시
-    if not match_hp:
-        return None
-
-    optimizer, lr, batch, iters, depth, act_init, l2 = match_hp.groups()
-
-    # Loss / ACC 추출 패턴
-    pattern_metrics = r"FINAL LOSS:\s*([0-9.eE+-]+)\s*\|\s*Test ACC:\s*([0-9.eE+-]+)"
-    match_metrics = re.search(pattern_metrics, line)
-
-    if not match_metrics:
-        return None
-
-    loss, acc = match_metrics.groups()
-
-    # 파싱한 결과 반환
-    return {
-        "line": line.strip(),       # 원본 라인을 그대로 저장
-        "optimizer": optimizer,
-        "lr": lr,                   # 문자열 그대로 저장 (1e-08 유지 목적)
-        "batch": int(batch),
-        "iters": int(iters),
-        "depth": int(depth),
-        "act_init": act_init,
-        "l2": l2,                   # 문자열 그대로 저장
-        "loss": parse_float(loss),  # 숫자 변환
-        "acc": parse_float(acc)     # 숫자 변환
-    }
-
-# 정렬된 로그 리스트를 파일로 출력
-def write_sorted(filename: str, items: List[Dict]):
-    with open(filename, "w") as f:
-        for x in items:
-            f.write(x["line"] + "\n")
-
-# 상위 Percentile 분석 함수
-# Top 1%, 3%, 6%, 12%에 대해 평균 Loss/ACC 및
-# LR/L2 등장 빈도 등을 분석한다.
-def analyze_top_percentiles(items: List[Dict], filename: str):
-    # 퍼센타일 비율
+# 퍼센타일 분석 함수
+def analyze_top_percentiles(df, filename):
     percentiles = [0.01, 0.03, 0.06, 0.12]
 
     with open(filename, "w") as f:
         f.write("=== Top Percentiles Analysis ===\n")
 
-        n = len(items)
+        n = len(df)
 
         for p in percentiles:
-            # 최소 1개는 포함
             count = max(1, int(n * p))
-            top_items = items[:count]  # ACC 기준 상위 모델만 사용
+            top_df = df.head(count)
 
-            # 평균 Loss/ACC 계산
-            avg_loss = sum(x["loss"] for x in top_items) / count
-            avg_acc = sum(x["acc"] for x in top_items) / count
+            avg_loss = top_df["final_loss"].mean()
+            avg_acc = top_df["final_acc"].mean()
 
-            f.write(f"\n--- Top {int(p*100)}% ({count} models) ---\n")
+            f.write(f"\n--- Top {int(p * 100)}% ({count} models) ---\n")
             f.write(f"Avg Loss: {avg_loss:.6f}\n")
             f.write(f"Avg ACC : {avg_acc:.6f}\n")
 
-            # 하이퍼파라미터 요약
             f.write("Hyperparameter summary:\n")
 
-            lr_counts = {}
-            l2_counts = {}
-
-            for x in top_items:
-                lr_counts[x["lr"]] = lr_counts.get(x["lr"], 0) + 1
-                l2_counts[x["l2"]] = l2_counts.get(x["l2"], 0) + 1
-
-            # LR 빈도수 출력
+            # LR 빈도
             f.write(" Most common LR:\n")
-            for k, v in sorted(lr_counts.items(), key=lambda x: -x[1]):
-                f.write(f"   LR {k} -> {v} times\n")
+            for lr, cnt in top_df["lr"].value_counts().items():
+                f.write(f"   LR {lr} -> {cnt} times\n")
 
-            # L2 빈도수 출력
-            f.write(" Most common L2:\n")
-            for k, v in sorted(l2_counts.items(), key=lambda x: -x[1]):
-                f.write(f"   L2 {k} -> {v} times\n")
+            # L2 빈도
+            f.write(" Most common L2 (weight_decay_lambda):\n")
+            for l2, cnt in top_df["weight_decay_lambda"].value_counts().items():
+                f.write(f"   L2 {l2} -> {cnt} times\n")
 
-# 메인 함수
-# ACC/Loss 정렬 및 퍼센타일 분석을 수행
+            # 모델 상세 정보 전체 출력
+            f.write("\nModel details:\n")
+            for i, row in top_df.iterrows():
+                f.write(f"  {i+1}) "
+                        f"optimizer={row['optimizer']} | "
+                        f"lr={row['lr']} | "
+                        f"batch_size={row['batch_size']} | "
+                        f"max_iterations={row['max_iterations']} | "
+                        f"max_epochs={row['max_epochs']} | "
+                        f"hidden_size_list={row['hidden_size_list']} | "
+                        f"activation={row['activation']} | "
+                        f"weight_init_std={row['weight_init_std']} | "
+                        f"weight_decay_lambda={row['weight_decay_lambda']} | "
+                        f"use_batchnorm={row['use_batchnorm']} | "
+                        f"dropout_ration={row['dropout_ration']} | "
+                        f"final_loss={row['final_loss']} | "
+                        f"final_acc={row['final_acc']}\n"
+                        )
+
+
 def main():
-    input_file = "../log/loss_acc_log.txt"  # 입력 로그 파일
-    log_dir = "../log"                      # 출력 디렉토리
-
+    input_csv = "../log/loss_acc_log.csv"
+    log_dir = "../log"
     os.makedirs(log_dir, exist_ok=True)
 
-    # 로그 파일 읽기
-    lines = open(input_file, "r").readlines()
+    df = pd.read_csv(input_csv)
 
-    entries = []
-    for line in lines:
-        parsed = parse_log_line(line)
-        if parsed:
-            entries.append(parsed)
+    # 숫자 변환
+    for col in NUMERIC_COLS:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
 
-    # ACC 기준 내림차순 정렬
-    sorted_acc = sorted(entries, key=lambda x: x["acc"], reverse=True)
-    write_sorted(os.path.join(log_dir, "sort_acc.txt"), sorted_acc)
+    # ACC 기준 정렬
+    df_acc = df.sort_values(by="final_acc", ascending=False)
+    df_acc.to_csv(os.path.join(log_dir, "sort_acc.csv"), index=False)
 
-    # LOSS 기준 오름차순 정렬
-    sorted_loss = sorted(entries, key=lambda x: x["loss"])
-    write_sorted(os.path.join(log_dir, "sort_loss.txt"), sorted_loss)
+    # LOSS 기준 정렬
+    df_loss = df.sort_values(by="final_loss", ascending=True)
+    df_loss.to_csv(os.path.join(log_dir, "sort_loss.csv"), index=False)
 
-    # 퍼센타일 분석 (ACC 기준 상위 모델 사용)
-    analyze_top_percentiles(sorted_acc, os.path.join(log_dir, "sort_percentiles.txt"))
+    # 퍼센타일 분석
+    analyze_top_percentiles(df_acc, os.path.join(log_dir, "sort_percentiles.txt"))
 
-    print("Done: sort_acc.txt, sort_loss.txt, sort_percentiles.txt created.")
+    print("Done: sort_acc.csv, sort_loss.csv, sort_percentiles.txt created.")
 
 
 if __name__ == "__main__":

@@ -39,7 +39,7 @@ def summarize_results(params, final_loss, final_acc):
     """실험 결과를 정렬된 텍스트로 간결하게 요약 출력."""
 
     # 안전한 접근(get) 사용 및 상태 플래그 계산
-    use_bn = params.get('use_batchnorm', False)
+    use_bn = params.get('use_batchnorm', True)
     dropout_ratio = params.get('dropout_ration', 0.0)
     activation = params.get('activation', 'relu')
     weight_init = params.get('weight_init_std', 'relu')
