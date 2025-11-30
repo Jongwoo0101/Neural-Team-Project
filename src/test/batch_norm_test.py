@@ -37,7 +37,7 @@ def train(use_dropout_flag, dropout_ratio_val):
         weight_init_std='relu',
         use_batchnorm=True,
         use_dropout=use_dropout_flag,
-        dropout_ratio=dropout_ratio_val  # 오타 수정됨
+        dropout_ration=dropout_ratio_val
     )
 
     optimizer = SGD(lr=learning_rate)
