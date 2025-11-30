@@ -1,3 +1,7 @@
+'''
+다양한 모델 구조 및 학습 조건이 MNIST 분류 성능에 미치는 영향을 분석하고,
+최적의 하이퍼파라미터 조합을 탐색한다
+'''
 import sys, os, time, traceback
 from datetime import timedelta
 import numpy as np

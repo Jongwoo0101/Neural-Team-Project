@@ -1,4 +1,5 @@
 """
+Adam과 AdaGrad비교 코드
 multi_layer_net_test.py와 달라진 점
 - 두 그래프(손실/정확도)의 범위 지정
 - 테스트 정확도 계산 그래프 추가

@@ -2,6 +2,8 @@
 cd src
 cd test
 python multi_layer_net_test.py
+서로 다른 최적화 알고리즘(SGD, 
+Momentum, AdaGrad, Adam)의 학습 성능을 비교하기 위한 실험 스크립트
 """
 import sys, os
 import matplotlib.pyplot as plt

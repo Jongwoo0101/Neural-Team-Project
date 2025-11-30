@@ -1,3 +1,23 @@
+'''
+하이퍼파라미터 탐색 결과로 생성된 CSV 로그 파일
+(loss_acc_log.csv)을 분석하여 다음의 결과물을 자동 생성한다.
+
+[1] 정확도 기준 정렬 (sort_acc.csv)
+    - final_acc 기준 내림차순 정렬
+    - 가장 성능이 좋은 모델 조합을 빠르게 파악하기 위함
+
+[2] 손실 기준 정렬 (sort_loss.csv)
+    - final_loss 기준 오름차순 정렬
+    - 최적 수렴 특성을 보인 모델 조합을 식별하기 위함
+
+[3] 상위 퍼센타일 분석 (sort_percentiles.txt)
+    - Top 1%, 3%, 6%, 12% 모델을 기준으로 평균 Loss, 평균 ACC 계산
+    - 최상위 모델들이 공통적으로 가지는 하이퍼파라미터 경향 분석
+        • 가장 자주 등장한 Learning Rate
+        • 가장 자주 등장한 L2(Weight Decay)
+        • 전체 모델 상세 정보 출력
+'''
+
 import os
 import pandas as pd
 

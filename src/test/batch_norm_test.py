@@ -1,3 +1,8 @@
+'''
+Batch Normalization이 적용된 네트워크에서  
+Dropout의 추가 적용이 학습 안정성 및 정확도 향상에 어떤 영향을 미치는지 분석한다.
+'''
+
 import sys, os
 import numpy as np
 import matplotlib.pyplot as plt
