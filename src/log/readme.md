@@ -6,11 +6,11 @@
 ## 1. 파일 목록 및 설명
 ---
 
-### `sort_acc.txt`
+### `sort_acc.csv`
 - 지표: **Accuracy**  
 - Accuracy 값을 기준으로 내림차순 정렬한 결과를 포함한다.
 
-### `sort_loss.txt`
+### `sort_loss.csv`
 - 지표: **Loss**  
 - Loss 기준 내림차순 정렬 결과를 정리한 파일이다.
 
