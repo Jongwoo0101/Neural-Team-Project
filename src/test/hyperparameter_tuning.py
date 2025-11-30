@@ -47,111 +47,87 @@ hyperparameter_tuning_loss.py에서 hyperparameter_tuning.py으로 이름을 바
 -Dropout에 대한 True,False는 (drop_r > 0)으로 처리
 """
 import sys, os, time
-from datetime import timedelta#시간 차이를 포맷하기 위해
+from datetime import timedelta
 import numpy as np
+import pandas as pd   # ← CSV 저장을 위해 추가
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from models.multi_layer_net_extend import MultiLayerNetExtend
 from common.optimizer import *
-from common.functions import summarize_results#hyperparameter 수정시 수정 필요
+from common.functions import summarize_results
 from data.mnist_reader import load_mnist
-from itertools import product#효과적인 loop처리를 위한
-# 시간 재기 시작
+from itertools import product
+
+# 시간 측정 시작
 start_time = time.time()
-# 0. MNIST 데이터 읽기 및 실험 설정 후보 값 정의==========
-# 0-1. 데이터 읽기
-x_train, t_train = load_mnist('../data', kind='train')
-x_test, t_test = load_mnist('../data', kind='t10k')
+
+# ==================== MNIST 데이터 ======================
 x_train, t_train = load_mnist('../data', kind='train')
 x_test, t_test = load_mnist('../data', kind='t10k')
 
-#=========정규화
-# 데이터를 실수형(float)으로 변환, 정규화 수행 (Normalization)
-# 각 픽셀 값을 최대값 255로 나누어 스케일을 [0.0, 1.0] 범위로 맞춘다.
 x_train = x_train.astype(np.float32) / 255.0
 x_test = x_test.astype(np.float32) / 255.0
-#=========
+
 train_size = x_train.shape[0]
-if t_test.ndim != 1: 
+if t_test.ndim != 1:
     y_true_test = np.argmax(t_test, axis=1)
 else:
     y_true_test = t_test
-# 0-2. 공통 하이퍼파라미터:
+
+# =============== 공통 하이퍼파라미터 ===============
 COMMON_HPARAMS = {
-    'learning_rate': [1e-2, 1e-3, 1e-4],# 일반적으로 가장 중요.[1e-1,1e-2, 1e-3, 1e-4]>[1e-2, 1e-3, 1e-4]
-    'batch_size': [128, 256],# 훈련 안정성과 속도에 영향
-    #'max_iterations': [1000],# 충분한 수렴 시간 보장 위함[500, 1000]>[1000]
-    'max_epochs': [10, 20], # 에폭 기준을 추가
+    'learning_rate': [1e-2, 1e-3, 1e-4],
+    'batch_size': [128, 256],
+    'max_iterations': [1000],
 }
-# 0-3. MultiLayerNetExtend 모델 설정 후보
+
 MODEL_HPARAMS = {
-    # 활성화 함수와 이에 맞는 가중치 초기화 세트> 같이 간다.
     'activation_init_sets': [
-        {'activation': 'relu', 'weight_init_std': 'relu'}        # 권장: He 초기값
-        # {'activation': 'sigmoid', 'weight_init_std': 'sigmoid'}  ## 권장: Xavier 초기값
+        {'activation': 'relu', 'weight_init_std': 'relu'}
     ],
-    # 은닉층 구조: 층의 개수(깊이, index)만 변경 (뉴런 100개 고정)
     'hidden_size_lists': {
-        #1: [100],#
-        #2: [100, 100],#
         3: [100, 100, 100],
         4: [100, 100, 100, 100],
         5: [100, 100, 100, 100, 100],
         6: [100, 100, 100, 100, 100, 100],
     },
-    # L2 규제 강도: 0은 규제x
     'weight_decay_lambda': [0, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4],
-    #배치 정규화 설정, True: 사용/False: 미사용
-    'use_batchnorm':[True,False],
-    # #DropOut 설정, True: 사용/False: 미사용
-    # 'use_dropout':[True,False],
-    #DropOut 비율, (use_dropout=True시 사용, 0은 Dropout 미적용 의미)
-    'dropout_rations':[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ]
+    'use_batchnorm': [True, False],
+    'dropout_rations': [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]
 }
-#0-4. 옵티마이저 목록 (lr은 COMMON_HPARAMS에서 가져오고, 내부 파라미터는 고정)
-# OPTIMIZERS_TO_TEST = {'Adam': Adam, 'AdaGrad': AdaGrad}
-OPTIMIZER_TO_USE = Adam # Adam이라는 클래스 자체를 저장하는 변수
+
+OPTIMIZER_TO_USE = Adam
 OPTIMIZER_NAME = 'Adam'
 
-# 1_1. 모든 조합을 생성 (product 함수 사용)
-# product는 중첩 루프를 대신하여 모든 가능한 조합을 튜플로 반환한다.
-# 모델 HPARAMS
+# =============== 모든 조합 리스트 만들기 ===============
 activation_inits = MODEL_HPARAMS['activation_init_sets']
 hidden_depths = MODEL_HPARAMS['hidden_size_lists'].keys()
 l2_lambdas = MODEL_HPARAMS['weight_decay_lambda']
 
-# COMMON HPARAMS
 lrs = COMMON_HPARAMS['learning_rate']
 batch_sizes = COMMON_HPARAMS['batch_size']
-# max_iters = COMMON_HPARAMS['max_iterations']
-max_expochs=COMMON_HPARAMS['max_epochs']
-# 조건부/정규화 HPARAMS 리스트
+max_iters = COMMON_HPARAMS['max_iterations']
+
 use_bns = MODEL_HPARAMS['use_batchnorm']
-# use_drops = MODEL_HPARAMS['use_dropout']
 drop_ratios = MODEL_HPARAMS['dropout_rations']
 
-# 1. 모든 하이퍼파라미터 조합 생성
 all_combinations = product(
-    lrs, batch_sizes, max_expochs, activation_inits, 
+    lrs, batch_sizes, max_iters, activation_inits,
     hidden_depths, l2_lambdas, use_bns, drop_ratios
 )
-# 총 조합 수 계산 (결과 출력용)
-total_combinations = len(lrs) * len(batch_sizes) * len(max_expochs) * len(activation_inits) * \
-                     len(hidden_depths) * len(l2_lambdas) * len(use_bns) * len(drop_ratios)
-# 2. 조합 순회 시작
-for lr, bs, max_e, act_init, depth, l2, use_bn, drop_r in all_combinations:
 
-    # 훈련에 필요한 반복 횟수 계산
-    iter_per_epoch = max(train_size // bs, 1)
-    max_i = max_e * iter_per_epoch # <---- 계산된 Max Iterations
-    # 2-1. 현재 실험 파라미터 딕셔너리 생성
+# CSV 저장용 결과 리스트
+results = []
+
+# =============== 조합 순회 ===============
+for lr, bs, max_i, act_init, depth, l2, use_bn, drop_r in all_combinations:
+
     current_params = {
         'optimizer': OPTIMIZER_NAME,
         'lr': lr,
         'batch_size': bs,
-        'max_epochs': max_e,
-        'max_iterations': max_i, # 계산된 Iterations 정보 저장 (출력/2-2.2용)
+        'max_iterations': max_i,
         'hidden_size_list': MODEL_HPARAMS['hidden_size_lists'][depth],
         'activation': act_init['activation'],
         'weight_init_std': act_init['weight_init_std'],
@@ -159,10 +135,10 @@ for lr, bs, max_e, act_init, depth, l2, use_bn, drop_r in all_combinations:
         'use_batchnorm': use_bn,
         'dropout_ration': drop_r
     }
-    # 2-2. 단일 조합 훈련 및 평가===========
+
     train_loss_list = []
     try:
-        # 2-2.1. 네트워크 및 옵티마이저 초기화
+        # 모델 초기화
         network = MultiLayerNetExtend(
             input_size=784,
             hidden_size_list=current_params['hidden_size_list'],
@@ -170,59 +146,64 @@ for lr, bs, max_e, act_init, depth, l2, use_bn, drop_r in all_combinations:
             activation=current_params['activation'],
             weight_init_std=current_params['weight_init_std'],
             weight_decay_lambda=current_params['weight_decay_lambda'],
-            # ====== 추가된 파라미터 전달 ======
             use_batchnorm=current_params['use_batchnorm'],
-            # ratio가 0보다 클 때만 True를 전달 (MultiLayerNetExtend 내에서 처리 가능)
             use_dropout=(drop_r > 0),
             dropout_ration=current_params['dropout_ration']
-            # ==================================
         )
         optimizer = OPTIMIZER_TO_USE(lr=current_params['lr'])
-        # 2-2.2. 훈련 루프
+
+        # 훈련 반복
         for i in range(current_params['max_iterations']):
             batch_mask = np.random.choice(train_size, current_params['batch_size'])
             x_batch = x_train[batch_mask]
             t_batch = t_train[batch_mask]
-            
+
             grads = network.gradient(x_batch, t_batch)
             optimizer.update(network.params, grads)
-            
-            # 손실 값 기록 (추가된 부분)
+
             loss = network.loss(x_batch, t_batch)
-            #loss = network[key].loss(x_batch, t_batch, train_flg=True)
             train_loss_list.append(loss)
-        # 2-2.3. 최종 성능 평가
-        # 2-2.3_1. 최종 손실: 기록된 손실 리스트의 마지막 값 사용(리스트가 비어있으면 훈련 실패로 간주.)
-        if train_loss_list:
-            final_loss = train_loss_list[-1] 
-        else:
-            final_loss = np.inf # 무한대로 설정하여 낮은 순위로 밀어냄
-        #2-2.3_2. 최종 정확도, 평가 시에는 Dropout 비활성화 (MultiLayerNetExtend에서 필요)
+
+        # 평가
+        final_loss = train_loss_list[-1] if train_loss_list else np.inf
         network.use_dropout = False
         final_acc = network.accuracy(x_test, t_test)
-        summarize_results(current_params, final_loss, final_acc)
-    except RuntimeWarning:
-        # 실패한 경우, 손실을 무한대로 설정
-        print(f"|FAILED EXPERIMENT| {current_params} | FINAL LOSS: {np.inf:.6f} | Error: Overflow/NaN")
-    
-    except Exception as e:
-        # 기타 예외 처리
-        print(f"|ERROR| {current_params} | FINAL LOSS: {np.inf:.6f} | Exception: {e}")
 
-# 3. 시간 측정
+        summarize_results(current_params, final_loss, final_acc)
+
+        # CSV 저장용 데이터 추가
+        results.append({
+            **current_params,
+            'final_loss': float(final_loss),
+            'final_acc': float(final_acc)
+        })
+
+    except Exception as e:
+        print(f"|ERROR| {current_params} | Exception: {e}")
+        results.append({
+            **current_params,
+            'final_loss': np.inf,
+            'final_acc': 0
+        })
+
+# =============== CSV 저장 (추가된 부분) ===============
+df = pd.DataFrame(results)
+csv_path = "hyperparam_results.csv"
+df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+
+print(f"\nCSV 저장 완료 → {csv_path}\n")
+
+# =============== 총 소요 시간 출력 ===============
 end_time = time.time()
 elapsed_seconds = end_time - start_time
-# 시간, 분, 초로 변환
 td = timedelta(seconds=elapsed_seconds)
-# timedelta 객체를 시:분:초.소수점 형식으로 변환하여 출력(td는 기본적으로 HH:MM:SS.microseconds 형식으로 포매팅됨)
 time_str = str(td)
 if '.' in time_str:
-    #round(float,n-1)와 같은 기능,  0:00:01.123456 -> 0:00:01.123)
     time_str = time_str[:time_str.find('.') + 4]
 else:
-    time_str += '.000' # 소수점이 없는 경우 추가
+    time_str += '.000'
 
-print(f"\n============================================================")
-print(f" Total Experiment Combinations (number of cases): {total_combinations}")
-print(f"Total Elapsed Time (H:M:S.ms): {time_str}")
-print(f"============================================================\n")
+print("============================================================")
+print(f"Total Experiment Combinations: {len(results)}")
+print(f"Total Elapsed Time: {time_str}")
+print("============================================================")
