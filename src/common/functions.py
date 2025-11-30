@@ -36,25 +36,34 @@ def to_one_hot(t, num_classes=10):
     return np.eye(num_classes)[t]
 
 def summarize_results(params, final_loss, final_acc):
-    """실험 결과를 깔끔하게 정렬된 텍스트 줄로 요약하여 출력한다."""
-    # 필드 너비를 지정하여 문자열을 포매팅 (VS Code 고정폭 폰트 전제)
-    # 예시:<7 -> 7칸 왼쪽 정렬, :>4 -> 4칸 오른쪽 정렬
-    # 배치 정규화(BN) 플래그를 Yes/No 문자열로 변환 (출력 간결화)
-    bn_status = 'T' if params.get('use_batchnorm') else 'F'
-    drop_status = 'T' if params['dropout_ration'] > 0 else 'F'
-    setting_str = (
-        f"Optimizer: {params['optimizer']:<7}, "          # Adam,AdaGrad -> 7칸 확보
-        f"LR: {params['lr']:<7}, "                  # 0.1,0.001... -> 7칸 확보
-        f"Batch: {params['batch_size']:>4}, "               # 64, 128, 256... -> 4칸 확보 (오른쪽 정렬)
-        f"Epochs: {params['max_epochs']:>3}, "          # Epochs 항목 추가
-        f"Iters: {params['max_iterations']:>4}, "            # 500, 1000... -> 4칸 확보 (오른쪽 정렬)
-        f"Depth: {len(params['hidden_size_list']):>1}, "            # 1~6... -> 1칸 확보
-        f"Act/Init: {params['activation']}/{params['weight_init_std']:<5}, "    # relu/relu, sigmoid/sigmoid -> 8칸 확보|relu/relu만 있을땐 5칸
-        f"L2: {params['weight_decay_lambda']:<7}, "                    # 1e-08, 0 등 -> 7칸 확보
-        f"BN: {bn_status:<1}, "                                      # T/F -> 1칸 확보 
-        f"Drop: {drop_status:<1}, "                       # T/F -> 1칸 확보
-        f"Drop R: {params['dropout_ration']:<5.1f} "                  # Dropout Ratio (0.0 ~ 0.6) -> 5칸 확보, 소수점 첫째 자리까지
-    )
+    """실험 결과를 정렬된 텍스트로 간결하게 요약 출력."""
+
+    # 안전한 접근(get) 사용 및 상태 플래그 계산
+    use_bn = params.get('use_batchnorm', False)
+    dropout_ratio = params.get('dropout_ration', 0.0)
+    activation = params.get('activation', 'relu')
+    weight_init = params.get('weight_init_std', 'relu')
+
+    bn_status = 'T' if use_bn else 'F'
+    drop_status = 'T' if dropout_ratio > 0 else 'F'
+
+    # 출력 필드 구성
+    fields = [
+        f"Optimizer: {params.get('optimizer', 'N/A'):<7}",
+        f"LR: {params.get('lr', 'N/A'):<7}",
+        f"Batch: {params.get('batch_size', 0):>4}",
+        f"Epochs: {params.get('max_epochs', 0):>3}",
+        f"Iters: {params.get('max_iterations', 0):>4}",
+        f"Depth: {len(params.get('hidden_size_list', [])):>1}",
+        f"Act/Init: {activation}/{weight_init:<5}",
+        f"L2: {params.get('weight_decay_lambda', 0):<7}",
+        f"BN: {bn_status}",
+        f"Drop: {drop_status}",
+        f"Drop R: {dropout_ratio:<5.1f}"
+    ]
+
+    # 한 줄로 합침
+    setting_str = ", ".join(fields)
     result_str = f"| FINAL LOSS: {final_loss:.6f} | Test ACC: {final_acc:.4f} |"
 
     print(f"{setting_str} {result_str}")
