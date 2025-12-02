@@ -72,7 +72,7 @@ save_path = "model_params.pkl"
 with open(save_path, 'wb') as f:
     pickle.dump(network.params, f)
 
-print(f"\n✅ 학습된 모델 파라미터가 '{save_path}' 로 저장되었습니다.")
+print(f"\n학습된 모델 파라미터가 '{save_path}' 로 저장되었습니다.")
 
 
 # 7. (선택) 저장된 pkl 파일 불러오는 예시
