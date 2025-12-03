@@ -4,8 +4,8 @@ import os, sys,pickle
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from common.optimizer import AdamLr
-from models.multi_layer_net_extend import MultiLayerNetExtend
-from data.mnist_reader import load_mnist
+from common.multi_layer_net_extend import MultiLayerNetExtend
+from dataset.fashion_mnist import load_fashion_mnist
 from common.util import shuffle_dataset
 import matplotlib.pyplot as plt
 def print_hyperparameters():
@@ -38,8 +38,8 @@ with open("../comp/lr_check.txt", 'w', encoding='utf-8') as f:
 
 
 # 2. 데이터 로드 (여기서는 MNIST 예시)
-x_train_all, t_train_all = load_mnist('../data', kind='train')
-x_test, t_test = load_mnist('../data', kind='t10k')
+x_train_all, t_train_all = load_fashion_mnist('../dataset', kind='train')
+x_test, t_test = load_fashion_mnist('../dataset', kind='t10k')
 
 x_train_all = x_train_all.astype(np.float32) / 255.0
 x_test = x_test.astype(np.float32) / 255.0

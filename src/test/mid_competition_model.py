@@ -5,7 +5,7 @@ import os, sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from common.optimizer import Adam
-from models.multi_layer_net_extend import MultiLayerNetExtend
+from common.multi_layer_net_extend import MultiLayerNetExtend
 from dataset.fashion_mnist import load_fashion_mnist
 
 # 2. 데이터 로드 및 정규화

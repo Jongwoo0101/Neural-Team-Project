@@ -6,12 +6,12 @@ import os, sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from common.optimizer import Adam
-from models.multi_layer_net_extend import MultiLayerNetExtend
-from data.mnist_reader import load_mnist
+from common.multi_layer_net_extend import MultiLayerNetExtend
+from dataset.fashion_mnist import load_fashion_mnist
 
 # 2. 데이터 로드 및 정규화
-x_train, t_train = load_mnist('../data', kind='train')
-x_test, t_test = load_mnist('../data', kind='t10k')
+x_train, t_train = load_fashion_mnist('../dataset', kind='train')
+x_test, t_test = load_fashion_mnist('../dataset', kind='t10k')
 
 # 데이터 정규화 (0-1 범위로)
 x_train = x_train.astype(np.float32) / 255.0

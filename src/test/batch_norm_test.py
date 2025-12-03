@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from dataset.fashion_mnist import load_fashion_mnist
-from models.multi_layer_net_extend import MultiLayerNetExtend
+from common.multi_layer_net_extend import MultiLayerNetExtend
 from common.optimizer import SGD
 
 # 0. MNIST 데이터 읽기

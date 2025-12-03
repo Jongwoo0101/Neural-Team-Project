@@ -9,7 +9,7 @@ import pandas as pd
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-from models.multi_layer_net_extend import MultiLayerNetExtend
+from common.multi_layer_net_extend import MultiLayerNetExtend
 from common.optimizer import Adam
 from common.functions import summarize_results
 from dataset.fashion_mnist import load_fashion_mnist

@@ -56,7 +56,7 @@ import pandas as pd   # ← CSV 저장을 위해 추가
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-from models.multi_layer_net_extend import MultiLayerNetExtend
+from common.multi_layer_net_extend import MultiLayerNetExtend
 from common.optimizer import *
 from common.functions import summarize_results
 from dataset.fashion_mnist import load_fashion_mnist

@@ -13,7 +13,7 @@ import pickle
 sys.path.append(os.pardir)  # 부모 디렉터리의 파일을 가져올 수 있도록 설정
 
 from common.util import *
-from data.mnist_reader import load_mnist
+from dataset.fashion_mnist import load_fashion_mnist
 
 
 
@@ -24,9 +24,8 @@ with open('test_data.pkl', 'rb') as f:
 x_test = data["x_test"]
 t_test = data["t_test"]
 
-# x_test, t_test 변수 확인
-# print("x_test:", x_test.shape)
-# print("t_test:", t_test.shape)
+print("x_test:", x_test.shape)
+print("t_test:", t_test.shape)
 
 # 자기 팀의 network 파일 불러오기
 with open('network_Team5.pkl', 'rb') as f: # 5조에서 제출한 network 파일을 사용한 예시
@@ -36,16 +35,10 @@ with open('network_Team5.pkl', 'rb') as f: # 5조에서 제출한 network 파일
 accuracy = network.accuracy(x_test, t_test)
 print(f"accuracy:{accuracy:.4f}", )
 
-#
-# network_Team1.pkl은 
-# 1조(Team1)가 MultiLayerNet 객체 또는  MultiLayerNetExtend 객체를 
-# network라고 명명하여 pkl 파일로 저장한 것입니다.
-#
 
-# trainer의 network를 저장하는 코드 예시는 다음과 같습니다. 
-#     with open('network_Team1.pkl', 'wb') as f:
-#        pickle.dump(trainer.network, f)
-# 여러분은 각자 상황에 맞게 network를 저장하시면 됩니다.
+
+    # with open('network_Team1.pkl', 'wb') as f:
+    #    pickle.dump(trainer.network, f)
 
 
 # 문의 사항이 있으면, 
