@@ -3,7 +3,7 @@ import os, sys,pickle
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-from common.optimizer import Adam
+from common.optimizer import AdamLr
 from models.multi_layer_net_extend import MultiLayerNetExtend
 from data.mnist_reader import load_mnist
 from common.util import shuffle_dataset
@@ -78,7 +78,7 @@ network = MultiLayerNetExtend(
     dropout_ration=dropout_ratio
 )
 
-optimizer = Adam(lr=learning_rate)
+optimizer = AdamLr(lr=learning_rate)
 
 train_size = x_train.shape[0]
 iter_per_epoch = max(train_size // batch_size, 1)

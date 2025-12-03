@@ -94,7 +94,7 @@ class RMSprop:
             self.h[key] *= self.decay_rate
             self.h[key] += (1 - self.decay_rate) * grads[key] * grads[key]
             params[key] -= self.lr * grads[key] / (np.sqrt(self.h[key]) + 1e-7)
-class AdamIR:
+class AdamLr:
 
 
     def __init__(self, lr=0.001, beta1=0.9, beta2=0.999):
