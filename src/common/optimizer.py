@@ -94,7 +94,7 @@ class RMSprop:
             self.h[key] *= self.decay_rate
             self.h[key] += (1 - self.decay_rate) * grads[key] * grads[key]
             params[key] -= self.lr * grads[key] / (np.sqrt(self.h[key]) + 1e-7)
-class Adam:
+class AdamIR:
 
 
     def __init__(self, lr=0.001, beta1=0.9, beta2=0.999):
@@ -105,9 +105,9 @@ class Adam:
         self.m = None
         self.v = None
 
-        # #lr 그래프 그리기 위한 멤버 변수
-        # self.lr_t_history = []
-        # self.iter_history = []
+        #lr 그래프 그리기 위한 멤버 변수
+        self.lr_t_history = []
+        self.iter_history = []
         
     def update(self, params, grads):
         if self.m is None:
@@ -116,10 +116,11 @@ class Adam:
                 self.m[key] = np.zeros_like(val)
                 self.v[key] = np.zeros_like(val)
         
-        # self.iter += 1
+        self.iter += 1
         lr_t  = self.lr * np.sqrt(1.0 - self.beta2**self.iter) / (1.0 - self.beta1**self.iter)
         self.lr_t_history.append(lr_t)
         self.iter_history.append(self.iter)
+        #iteration마다하기에 출력이 너무 길다.
         with open("../comp/lr_check.txt", 'a', encoding='utf-8') as f:     
             f.write(f"Iteration {self.iter}: Adaptive Learning Rate (lr_t) = {lr_t:.8f}\n")
 
@@ -136,7 +137,6 @@ class Adam:
             #unbias_m += (1 - self.beta1) * (grads[key] - self.m[key]) # correct bias
             #unbisa_b += (1 - self.beta2) * (grads[key]*grads[key] - self.v[key]) # correct bias
             #params[key] += self.lr * unbias_m / (np.sqrt(unbisa_b) + 1e-7)
-"""
 class Adam:
 
     #Adam (http://arxiv.org/abs/1412.6980v8)
@@ -170,6 +170,3 @@ class Adam:
             #unbias_m += (1 - self.beta1) * (grads[key] - self.m[key]) # correct bias
             #unbisa_b += (1 - self.beta2) * (grads[key]*grads[key] - self.v[key]) # correct bias
             #params[key] += self.lr * unbias_m / (np.sqrt(unbisa_b) + 1e-7)
-
-
-"""
