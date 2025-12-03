@@ -33,7 +33,8 @@ def print_hyperparameters():
         print(f"  └ 전체 훈련 데이터 크기: {x_train_all.shape[0]}개")
     print("==========================================")
 
-
+with open("../comp/lr_check.txt", 'w', encoding='utf-8') as f: 
+    f.write("")
 
 
 # 2. 데이터 로드 (여기서는 MNIST 예시)
