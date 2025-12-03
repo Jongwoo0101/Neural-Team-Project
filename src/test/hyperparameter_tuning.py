@@ -45,6 +45,9 @@ hyperparameter_tuning_loss.py에서 hyperparameter_tuning.py으로 이름을 바
 -acc만 사용했던 것과 다르게 loss도 기준을 세워서 뒤에_loss를 붙였지만 이후 과정을 위해 생략한다.
 배치 정규화와 Dropout에 대한 코드도 추가
 -Dropout에 대한 True,False는 (drop_r > 0)으로 처리
+-이에 따른 경우의 수 계산
+--epoch 도입의 경우: 3*2*2*1*4*6*2*7=4032
+--epoch 도입하지 않은 경우: 3*2*1*1*4*6*2*7=2016
 """
 import sys, os, time
 from datetime import timedelta
@@ -79,7 +82,8 @@ else:
 COMMON_HPARAMS = {
     'learning_rate': [1e-2, 1e-3, 1e-4],
     'batch_size': [128, 256],
-    'max_iterations': [1000],
+    #'max_iterations': [1000],
+    'max_epochs': [10, 20], # 에폭 기준을 추가
 }
 
 MODEL_HPARAMS = {
@@ -107,13 +111,13 @@ l2_lambdas = MODEL_HPARAMS['weight_decay_lambda']
 
 lrs = COMMON_HPARAMS['learning_rate']
 batch_sizes = COMMON_HPARAMS['batch_size']
-max_iters = COMMON_HPARAMS['max_iterations']
+max_expochs=COMMON_HPARAMS['max_epochs']
 
 use_bns = MODEL_HPARAMS['use_batchnorm']
 drop_ratios = MODEL_HPARAMS['dropout_rations']
 
 all_combinations = product(
-    lrs, batch_sizes, max_iters, activation_inits,
+    lrs, batch_sizes, max_expochs, activation_inits,
     hidden_depths, l2_lambdas, use_bns, drop_ratios
 )
 
@@ -121,13 +125,16 @@ all_combinations = product(
 results = []
 
 # =============== 조합 순회 ===============
-for lr, bs, max_i, act_init, depth, l2, use_bn, drop_r in all_combinations:
-
+for lr, bs, max_e, act_init, depth, l2, use_bn, drop_r in all_combinations:
+    # 훈련에 필요한 반복 횟수 계산
+    iter_per_epoch = max(train_size // bs, 1)
+    max_i = max_e * iter_per_epoch # <---- 계산된 Max Iterations
     current_params = {
         'optimizer': OPTIMIZER_NAME,
         'lr': lr,
         'batch_size': bs,
         'max_iterations': max_i,
+        'max_epochs': max_e,
         'hidden_size_list': MODEL_HPARAMS['hidden_size_lists'][depth],
         'activation': act_init['activation'],
         'weight_init_std': act_init['weight_init_std'],
