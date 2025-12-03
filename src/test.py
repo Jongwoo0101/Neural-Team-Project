@@ -1,10 +1,10 @@
-from data.mnist_reader import load_mnist
+from dataset.fashion_mnist import load_fashion_mnist
 
 # 학습(train) 데이터 불러오기
-x_train, t_train = load_mnist('./data', kind='train')
+x_train, t_train = load_fashion_mnist('./data', kind='train')
 
 # 테스트(test) 데이터 불러오기
-x_test, t_test = load_mnist('./data', kind='t10k')
+x_test, t_test = load_fashion_mnist('./data', kind='t10k')
 
 print(x_train.shape)  # (60000, 784)
 print(t_train.shape)  # (60000,)

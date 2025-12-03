@@ -19,11 +19,11 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from common.util import smooth_curve
 from models.multi_layer_net import MultiLayerNet
 from common.optimizer import *
-from data.mnist_reader import load_mnist
+from dataset.fashion_mnist import load_fashion_mnist
 
 # 0. MNIST 데이터 읽기
-x_train, t_train = load_mnist('../data', kind='train')
-x_test, t_test = load_mnist('../data', kind='t10k')
+x_train, t_train = load_fashion_mnist('../data', kind='train')
+x_test, t_test = load_fashion_mnist('../data', kind='t10k')
 
 train_size = x_train.shape[0]
 batch_size = 128

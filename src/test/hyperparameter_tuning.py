@@ -59,15 +59,15 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from models.multi_layer_net_extend import MultiLayerNetExtend
 from common.optimizer import *
 from common.functions import summarize_results
-from data.mnist_reader import load_mnist
+from dataset.fashion_mnist import load_fashion_mnist
 from itertools import product
 
 # 시간 측정 시작
 start_time = time.time()
 
 # ==================== MNIST 데이터 ======================
-x_train, t_train = load_mnist('../data', kind='train')
-x_test, t_test = load_mnist('../data', kind='t10k')
+x_train, t_train = load_fashion_mnist('../data', kind='train')
+x_test, t_test = load_fashion_mnist('../data', kind='t10k')
 
 x_train = x_train.astype(np.float32) / 255.0
 x_test = x_test.astype(np.float32) / 255.0

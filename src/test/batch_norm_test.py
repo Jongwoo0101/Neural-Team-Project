@@ -9,13 +9,13 @@ import matplotlib.pyplot as plt
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-from data.mnist_reader import load_mnist
+from dataset.fashion_mnist import load_fashion_mnist
 from models.multi_layer_net_extend import MultiLayerNetExtend
 from common.optimizer import SGD
 
 # 0. MNIST 데이터 읽기
-x_train, t_train = load_mnist('../data', kind='train')
-x_test, t_test = load_mnist('../data', kind='t10k')
+x_train, t_train = load_fashion_mnist('../data', kind='train')
+x_test, t_test = load_fashion_mnist('../data', kind='t10k')
 
 # 샘플 수 축소
 x_train = x_train[:1000]
