@@ -21,7 +21,7 @@ print("x_test:", x_test.shape)
 print("t_test:", t_test.shape)
 
 # 자기 팀의 network 파일 불러오기
-with open('network_Team1.pkl', 'rb') as f: # 1조에서 제출한 network 파일을 사용한 예시
+with open('network_Team5.pkl', 'rb') as f: # 1조에서 제출한 network 파일을 사용한 예시
     network = pickle.load(f)
 
 # 자기 팀의 accuray 구하여 출력하기
