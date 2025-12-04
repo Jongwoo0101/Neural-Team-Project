@@ -1,7 +1,7 @@
-# Competition_Code_Team5.py
 import numpy as np
 import pickle
 import os, sys
+import time
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
@@ -9,37 +9,45 @@ from common.optimizer import Adam
 from common.multi_layer_net_extend import MultiLayerNetExtend
 from dataset.fashion_mnist import load_fashion_mnist
 
-# 2. 데이터 로드 및 정규화
+
+# 1. 데이터 로드 (정규화 하지 않음 — 대회 규정 준수)
 x_train, t_train = load_fashion_mnist('../dataset', kind='train')
 x_test, t_test = load_fashion_mnist('../dataset', kind='t10k')
 
-# 데이터 정규화 (0-1 범위로)
-x_train = x_train.astype(np.float32) / 255.0
-x_test = x_test.astype(np.float32) / 255.0
+# flatten 여부 자동 체크
+if len(x_train.shape) == 3:  # (N, 28, 28) → flatten
+    x_train = x_train.reshape(x_train.shape[0], -1)
+    x_test = x_test.reshape(x_test.shape[0], -1)
 
 input_size = x_train.shape[1]
 output_size = 10
-# 3. 신경망/하이퍼파라미터 설정
-num_hidden_layers = 5  # 6층 이하
-hidden_size = 512  # 256 → 512로 증가
+train_size = x_train.shape[0]
+
+print("train shape:", x_train.shape)
+print("test shape:", x_test.shape)
+
+
+# 2. 하이퍼파라미터 설정 (최적 조합)
+num_hidden_layers = 5
+hidden_size = 512
 hidden_size_list = [hidden_size] * num_hidden_layers
 
 batch_size = 256
-learning_rate = 0.001
-max_epochs = 5
+learning_rate = 1e-4     # 입력을 255로 나누지 않으므로 LR 줄임
+max_epochs = 40           # early stopping 있으니 넉넉하게 설정
 
-
-weight_decay_lambda = 0.0001  # 0.0005* → 0.0001 (정규화 완화)
+weight_decay_lambda = 1e-4
 use_batchnorm = True
-dropout_ratio = 0.2  # 0.01 → 0.2 (적절한 정규화) 0.1*
+dropout_ratio = 0.2
 
-# 4. 모델 생성
+
+# 3. 모델 생성
 network = MultiLayerNetExtend(
     input_size=input_size,
     hidden_size_list=hidden_size_list,
     output_size=output_size,
     activation='relu',
-    weight_init_std='he',
+    weight_init_std=('he'),  
     weight_decay_lambda=weight_decay_lambda,
     use_batchnorm=use_batchnorm,
     use_dropout=True,
@@ -48,38 +56,111 @@ network = MultiLayerNetExtend(
 
 optimizer = Adam(lr=learning_rate)
 
-train_size = x_train.shape[0]
+
+# 4. 학습 설정
 iter_per_epoch = max(train_size // batch_size, 1)
 max_iter = iter_per_epoch * max_epochs
 
-print(f"총 반복 횟수: {max_iter}, 에포크당 반복: {iter_per_epoch}")
-print(f"네트워크 구조: 입력({input_size}) -> {hidden_size_list} -> 출력({output_size})")
-print(f"학습 시작...\n")
+# Validation split
+val_ratio = 0.1
+val_size = int(train_size * val_ratio)
 
-# 5. 학습 루프
-best_test_acc = 0.0
+x_val = x_train[:val_size]
+t_val = t_train[:val_size]
+
+x_train2 = x_train[val_size:]
+t_train2 = t_train[val_size:]
+
+train_size = x_train2.shape[0]
+
+print(f"[INFO] Train: {train_size}, Val: {val_size}, Test: {x_test.shape[0]}")
+print(f"[INFO] Model: Input({input_size}) -> {hidden_size_list} -> Output({output_size})")
+print("---------------------------------------------------------\n")
+
+
+# 5. Early Stopping & LR Scheduler 변수
+best_val_loss = float('inf')
+best_params = None
+patience = 5
+patience_counter = 0
+
+min_lr = 1e-6
+
+
+def reduce_lr():
+    global optimizer
+    new_lr = max(optimizer.lr * 0.5, min_lr)
+    optimizer.lr = new_lr
+    print(f"[Scheduler] Reduce LR → {new_lr:.8f}")
+
+
+# 6. Gradient clipping
+def clip_gradients(grads, clip_value=1.0):
+    for key in grads.keys():
+        grad = grads[key]
+        norm = np.linalg.norm(grad)
+        if norm > clip_value:
+            grads[key] = grad * (clip_value / norm)
+    return grads
+
+
+# 7. Training Loop
+start = time.time()
 for i in range(max_iter):
     batch_mask = np.random.choice(train_size, batch_size, replace=False)
-    x_batch = x_train[batch_mask]
-    t_batch = t_train[batch_mask]
-    
-    # 역전파
+    x_batch = x_train2[batch_mask]
+    t_batch = t_train2[batch_mask]
+
+    # Backprop
     grads = network.gradient(x_batch, t_batch)
     
-    # Adam 업데이트
+    # gradient clipping
+    grads = clip_gradients(grads, clip_value=1.0)
+
+    # Parameter update
     optimizer.update(network.params, grads)
-    
-    # epoch마다 출력
+
+    # Epoch 단위 출력
     if (i + 1) % iter_per_epoch == 0:
         epoch = (i + 1) // iter_per_epoch
-        loss = network.loss(x_batch, t_batch, train_flg=True)
-        train_acc = network.accuracy(x_train, t_train)
-        test_acc = network.accuracy(x_test, t_test)
-        # print(f"[Epoch {epoch}] loss: {loss:.4f}, train_acc: {train_acc:.4f}, test_acc: {test_acc:.4f}")
+        train_loss = network.loss(x_batch, t_batch)
+        
+        # Validation loss
+        val_loss = network.loss(x_val, t_val)
 
-print(f"accuracy: {test_acc:.4f}")
-# 6. 학습된 파라미터 pkl 파일로 저장
+        print(f"[Epoch {epoch:02d}] train_loss={train_loss:.4f}, val_loss={val_loss:.4f}")
+
+        # Early stopping 체크
+        if val_loss < best_val_loss:
+            best_val_loss = val_loss
+            best_params = pickle.dumps(network.params)  # deep copy
+            patience_counter = 0
+        else:
+            patience_counter += 1
+            print(f"  → No improvement ({patience_counter}/{patience})")
+        
+        # ReduceLROnPlateau
+        if patience_counter == 3:
+            reduce_lr()
+        
+        # Stop
+        if patience_counter >= patience:
+            print("\n[Early Stopping Triggered]")
+            break
+
+end = time.time()
+print(f"\nTotal training time: {end - start:.2f} sec")
+
+
+# 8. Best parameters 복구 후 테스트 정확도 계산
+network.params = pickle.loads(best_params)
+test_acc = network.accuracy(x_test, t_test)
+print(f"\n[Test Accuracy] {test_acc:.4f}")
+
+
+# 9. 모델 저장
 save_path = "network_Team5.pkl"
 with open(save_path, 'wb') as f:
     pickle.dump(network, f)
 
+print(f"\nSaved model → {save_path}")
