@@ -14,3 +14,6 @@ __pycache__/
 *.txt
 # (주의) requirements.txt는 포함해야 하므로 ignore 금지!
 !requirements.txt
+
+src/comp/*.pkl
+
