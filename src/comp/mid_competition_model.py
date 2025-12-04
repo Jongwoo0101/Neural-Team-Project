@@ -10,7 +10,7 @@ from common.multi_layer_net_extend import MultiLayerNetExtend
 from dataset.fashion_mnist import load_fashion_mnist
 
 
-# 1. 데이터 로드 (정규화 하지 않음 — 대회 규정 준수)
+# 1. 데이터 로드
 x_train, t_train = load_fashion_mnist('../dataset', kind='train')
 x_test, t_test = load_fashion_mnist('../dataset', kind='t10k')
 
@@ -47,7 +47,7 @@ network = MultiLayerNetExtend(
     hidden_size_list=hidden_size_list,
     output_size=output_size,
     activation='relu',
-    weight_init_std=('he'),  
+    weight_init_std='he',  
     weight_decay_lambda=weight_decay_lambda,
     use_batchnorm=use_batchnorm,
     use_dropout=True,
