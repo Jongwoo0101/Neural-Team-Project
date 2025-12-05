@@ -41,7 +41,7 @@ learning_rate = float(os.getenv("LEARNING_RATE"))
 max_epochs = int(os.getenv("MAX_EPOCHS"))
 
 weight_decay_lambda = float(os.getenv("WEIGHT_DECAY_LAMBDA"))
-use_batchnorm = os.getenv("USE_BATCHNORM") == "True"
+use_batchnorm = "True"
 dropout_ratio = float(os.getenv("DROPOUT_RATIO"))
 
 
