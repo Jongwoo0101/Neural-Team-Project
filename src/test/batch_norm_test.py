@@ -14,8 +14,8 @@ from common.multi_layer_net_extend import MultiLayerNetExtend
 from common.optimizer import SGD
 
 # 0. MNIST 데이터 읽기
-x_train, t_train = load_fashion_mnist('../data', kind='train')
-x_test, t_test = load_fashion_mnist('../data', kind='t10k')
+x_train, t_train = load_fashion_mnist('../dataset', kind='train')
+x_test, t_test = load_fashion_mnist('../dataset', kind='t10k')
 
 # 샘플 수 축소
 x_train = x_train[:1000]

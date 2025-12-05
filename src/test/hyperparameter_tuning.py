@@ -66,8 +66,8 @@ from itertools import product
 start_time = time.time()
 
 # ==================== MNIST 데이터 ======================
-x_train, t_train = load_fashion_mnist('../data', kind='train')
-x_test, t_test = load_fashion_mnist('../data', kind='t10k')
+x_train, t_train = load_fashion_mnist('../dataset', kind='train')
+x_test, t_test = load_fashion_mnist('../dataset', kind='t10k')
 
 x_train = x_train.astype(np.float32) / 255.0
 x_test = x_test.astype(np.float32) / 255.0
