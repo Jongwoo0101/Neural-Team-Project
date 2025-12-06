@@ -27,7 +27,7 @@ print("test shape:", x_test.shape)
 
 
 # 2. 하이퍼파라미터 설정 (최적 조합)
-num_hidden_layers = 6
+num_hidden_layers = 5
 hidden_size = 512
 
 hidden_size_list = [hidden_size] * num_hidden_layers
