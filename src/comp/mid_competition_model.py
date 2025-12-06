@@ -8,10 +8,6 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from common.optimizer import Adam
 from common.multi_layer_net_extend import MultiLayerNetExtend
 from dataset.fashion_mnist import load_fashion_mnist
-from dotenv import load_dotenv
-
-load_dotenv()
-
 
 # 1. 데이터 로드
 x_train, t_train = load_fashion_mnist('../dataset', kind='train')
@@ -31,18 +27,18 @@ print("test shape:", x_test.shape)
 
 
 # 2. 하이퍼파라미터 설정 (최적 조합)
-num_hidden_layers = int(os.getenv("NUM_HIDDEN_LAYERS"))
-hidden_size = int(os.getenv("HIDDEN_SIZE"))
+num_hidden_layers = 6
+hidden_size = 512
 
 hidden_size_list = [hidden_size] * num_hidden_layers
 
-batch_size = int(os.getenv("BATCH_SIZE"))
-learning_rate = float(os.getenv("LEARNING_RATE"))
-max_epochs = int(os.getenv("MAX_EPOCHS"))
+batch_size = 256
+learning_rate = 0.0001
+max_epochs = 40
 
-weight_decay_lambda = float(os.getenv("WEIGHT_DECAY_LAMBDA"))
+weight_decay_lambda = 0.0001
 use_batchnorm = "True"
-dropout_ratio = float(os.getenv("DROPOUT_RATIO"))
+dropout_ratio = 0.2
 
 
 # 3. 모델 생성
