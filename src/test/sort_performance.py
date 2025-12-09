@@ -80,7 +80,7 @@ def analyze_top_percentiles(df, filename):
 
 
 def main():
-    input_csv = "../log/loss_acc_log.csv"
+    input_csv = "hyperparam_results.csv"
     log_dir = "../log"
     os.makedirs(log_dir, exist_ok=True)
 
