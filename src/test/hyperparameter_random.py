@@ -78,29 +78,42 @@ if t_test.ndim != 1:
 else:
     y_true_test = t_test
 
+# Validation split
+val_ratio = 0.1
+val_size = int(train_size * val_ratio)
+
+x_val = x_train[:val_size]
+t_val = t_train[:val_size]
+
+x_train2 = x_train[val_size:]
+t_train2 = t_train[val_size:]
+train_size = x_train2.shape[0]
+
+x_train = x_train2
+t_train = t_train2
 
 NUM_SEARCH_ITERATIONS = 100
 # =============== 공통 하이퍼파라미터 ===============
+# Random Search 범위 정의
 COMMON_HPARAMS_RANGES = {
-    'learning_rate_log': (-5.0, -2.0),
-    'weight_decay_lambda_log': (-8.0, -4.0),
-    'batch_size': [356,512],
+    'learning_rate_log': (-4.0, -2.0),# 1e-4 ~ 1e-2
+    'weight_decay_lambda_log': (-5.0, -4.0), # 1e-5 ~ 1e-4
+    #이산값
+    'batch_size': [512],
     'dropout_rations': [0, 0.1, 0.2, 0.3],
     'use_batchnorm': [True],
     #'max_iterations': [1000],
-    'max_epochs': [10, 20], # 에폭 기준을 추가
-    'hidden_size_lists': {
-        5: [64, 64, 64, 64, 64],
-        6: [64, 64, 64, 64, 64, 64],
-    }
+    'max_epochs': [10], # 에폭 기준을 추가
+    'hidden_depths': [5], # Depth를 리스트로 정의
 }
-
+# (Sampling이 아닌 실제 값)
 MODEL_HPARAMS = {
     'activation_init_sets': [
         {'activation': 'relu', 'weight_init_std': 'relu'}
     ],
-    'weight_decay_lambda': [0, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4],
-    'dropout_rations': [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]
+    'hidden_size_lists': {
+        5: [64, 64, 64, 64, 64],
+    }
 }
 
 OPTIMIZER_TO_USE = Adam
@@ -124,11 +137,13 @@ for search_iter in range(NUM_SEARCH_ITERATIONS):
     # 이산 값 리스트에서 무작위 선택
     bs = np.random.choice(COMMON_HPARAMS_RANGES['batch_size'])
     max_e = np.random.choice(COMMON_HPARAMS_RANGES['max_epochs'])
-    depth = np.random.choice(COMMON_HPARAMS_RANGES['hidden_depths'])
     drop_r = np.random.choice(COMMON_HPARAMS_RANGES['dropout_rations'])
+
+    # 고정 값 선택
+    depth = COMMON_HPARAMS_RANGES['hidden_depths'][0]
     use_bn = COMMON_HPARAMS_RANGES['use_batchnorm'][0]
     
-    # 고정 값 선택
+    
     act_init = COMMON_HPARAMS_RANGES['activation_init_sets'][0]
     
     # 3-2. 훈련에 필요한 반복 횟수 계산 (Epoch 기반)
@@ -169,8 +184,8 @@ for search_iter in range(NUM_SEARCH_ITERATIONS):
         # 훈련 반복
         for i in range(current_params['max_iterations']):
             batch_mask = np.random.choice(train_size, current_params['batch_size'])
-            x_batch = x_train[batch_mask]
-            t_batch = t_train[batch_mask]
+            x_batch = x_train[batch_mask]# x_train2 대신 x_train 사용
+            t_batch = t_train[batch_mask]# t_train2 대신 t_train 사용
 
             grads = network.gradient(x_batch, t_batch)
             optimizer.update(network.params, grads)
@@ -181,17 +196,18 @@ for search_iter in range(NUM_SEARCH_ITERATIONS):
         # 평가
         final_loss = train_loss_list[-1] if train_loss_list else np.inf
         network.use_dropout = False
-        final_acc = network.accuracy(x_test, t_test)
+        # final_acc = network.accuracy(x_test, t_test)
+        # 검증데이터, 하이퍼파라미터 성능 평가를 x_val, t_val로 변경
+        final_val_acc = network.accuracy(x_val, t_val)
 
-        summarize_results(current_params, final_loss, final_acc)
+        summarize_results(current_params, final_loss, final_val_acc)
 
         # CSV 저장용 데이터 추가
         results.append({
             **current_params,
             'final_loss': float(final_loss),
-            'final_acc': float(final_acc)
+            'final_val_acc': float(final_val_acc) # 검증 정확도 저장
         })
-
     except Exception as e:
         params_info = f"LR:{lr:.2e}, Batch:{bs}, Epoch:{max_e}, Depth:{depth}, L2:{l2:.2e}"
         print(f"|ERROR| Failed Experiment ({params_info}) | Exception: {e}")

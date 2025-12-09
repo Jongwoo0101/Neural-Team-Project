@@ -64,6 +64,7 @@ def summarize_results(params, final_loss, final_acc):
 
     # 한 줄로 합침
     setting_str = ", ".join(fields)
-    result_str = f"| FINAL LOSS: {final_loss:.6f} | Test ACC: {final_acc:.4f} |"
+    # result_str = f"| TRAIN LOSS: {final_loss:.6f} | Test ACC: {final_acc:.4f} |"
+    result_str = f"| TRAIN LOSS: {final_loss:.6f} | Val ACC: {final_acc:.4f} |"
 
     print(f"{setting_str} {result_str}")
