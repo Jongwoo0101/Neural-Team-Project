@@ -72,11 +72,19 @@ x_test, t_test = load_fashion_mnist('../dataset', kind='t10k')
 x_train = x_train.astype(np.float32) / 255.0
 x_test = x_test.astype(np.float32) / 255.0
 
+# 결과를 빠르게 얻기 위해 훈련 데이터/에폭을 줄임
+x_train = x_train[:1000]
+t_train = t_train[:1000]
+
+
+
 train_size = x_train.shape[0]
 if t_test.ndim != 1:
     y_true_test = np.argmax(t_test, axis=1)
 else:
     y_true_test = t_test
+
+
 
 # Validation split
 val_ratio = 0.1
@@ -91,18 +99,17 @@ train_size = x_train2.shape[0]
 
 x_train = x_train2
 t_train = t_train2
-
-NUM_SEARCH_ITERATIONS = 100
+# 
+NUM_SEARCH_ITERATIONS = 300
 # =============== 공통 하이퍼파라미터 ===============
 # Random Search 범위 정의
 COMMON_HPARAMS_RANGES = {
-    'learning_rate_log': (-4.0, -2.0),# 1e-4 ~ 1e-2
-    'weight_decay_lambda_log': (-5.0, -4.0), # 1e-5 ~ 1e-4
+    'learning_rate_log': (-2.0, -5.0),# 1e-4 ~ 1e-2
+    'weight_decay_lambda_log': (-2.699, -6), # 1e-5 ~ 1e-4
     #이산값
-    'batch_size': [512],
-    'dropout_rations': [0, 0.1, 0.2, 0.3],
+    'batch_size': [128],
+    'dropout_rations': [0.2],#[0, 0.1, 0.2, 0.3]
     'use_batchnorm': [True],
-    #'max_iterations': [1000],
     'max_epochs': [10], # 에폭 기준을 추가
     'hidden_depths': [5], # Depth를 리스트로 정의
 }
@@ -130,10 +137,10 @@ for search_iter in range(NUM_SEARCH_ITERATIONS):
     # 로그 스케일 값 샘플링 후 10의 지수로 변환
     log_lr = np.random.uniform(*COMMON_HPARAMS_RANGES['learning_rate_log'])
     lr = 10**log_lr
-    
+    # lr=0.0048204543415823 #good: 0.007991645
     log_l2 = np.random.uniform(*COMMON_HPARAMS_RANGES['weight_decay_lambda_log'])
     l2 = 10**log_l2
-    
+    # l2=0.0000104211334480552
     # 이산 값 리스트에서 무작위 선택
     bs = np.random.choice(COMMON_HPARAMS_RANGES['batch_size'])
     max_e = np.random.choice(COMMON_HPARAMS_RANGES['max_epochs'])
@@ -142,9 +149,7 @@ for search_iter in range(NUM_SEARCH_ITERATIONS):
     # 고정 값 선택
     depth = COMMON_HPARAMS_RANGES['hidden_depths'][0]
     use_bn = COMMON_HPARAMS_RANGES['use_batchnorm'][0]
-    
-    
-    act_init = COMMON_HPARAMS_RANGES['activation_init_sets'][0]
+    act_init = MODEL_HPARAMS['activation_init_sets'][0]
     
     # 3-2. 훈련에 필요한 반복 횟수 계산 (Epoch 기반)
     iter_per_epoch = max(train_size // bs, 1)
